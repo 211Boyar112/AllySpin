@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Nutzungsbedingungen - AllySpin Casino</title>
+  <meta name="description" content="Nutzungsbedingungen für die Informationsseite casino-allyspin.com. Bedingungen für die Nutzung der Website. 18+ • Informationsseite." />
+  <link rel="canonical" href="https://casino-allyspin.com/terms.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nutzungsbedingungen - AllySpin Casino" />
+  <meta property="og:description" content="Allgemeine Geschäftsbedingungen für die Nutzung unserer Informationsseite. 18+." />
+  <meta property="og:url" content="https://casino-allyspin.com/terms.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Basic SEO extras -->
+  <meta name="theme-color" content="#170a2a" />
+
+  <style>
+    :root{
+      /* Основные цвета фона */
+      --bg-main: #242F3C; /* основной фон страницы */
+      --bg-section: #212C38; /* фон блоков/секций */
+      --bg-overlay: #150913; /* для оверлеев/теней/подложек */
+      
+      /* Шапка / акценты бордо */
+      --header-bg: #360812; /* бордовый фон хедера */
+      --header-accent: #682F14; /* тёплый бордо/коричневый */
+      
+      /* Акцентные цвета */
+      --accent-yellow: #F2D42B; /* яркий жёлтый (primary CTA) */
+      --accent-yellow-dark: #EBCC2A; /* жёлтый чуть темнее */
+      --accent-yellow-light: #E4D47A; /* светло-жёлтый */
+      
+      /* Цвета текста */
+      --text-primary: #EFF0F3; /* основной светлый текст */
+      --text-secondary: #B1ADBF; /* приглушённый текст */
+      
+      /* Дополнительные переменные */
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.04);
+      --stroke: rgba(255,255,255,.12);
+      
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --r: 18px;
+      --r2: 22px;
+      --max: 1180px;
+      --sb: 260px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-main);
+      line-height:1.7;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout как на главной странице */
+    .app{
+      display:grid;
+      grid-template-columns: var(--sb) 1fr;
+      min-height:100%;
+      gap:18px;
+      padding:18px;
+    }
+
+    @media (max-width: 940px){
+      .app{
+        grid-template-columns: 1fr;
+        padding:12px;
+      }
+      .sb{display:none}
+    }
+
+    /* Sidebar как на главной */
+    .sb{
+      position:sticky; 
+      top:18px;
+      height: calc(100vh - 36px);
+      overflow:auto;
+      border-radius: var(--r2);
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      padding:14px;
+      background-color: var(--bg-section);
+    }
+
+    .brand{
+      display:flex; 
+      align-items:center; 
+      gap:10px;
+      padding:10px;
+      border-radius: 16px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .brand img{
+      width:46px;
+      height:46px;
+      border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+    }
+    .brand .name{
+      font-weight:1000;
+      letter-spacing:.2px;
+      font-size:20px;
+      line-height:1.1;
+      color: var(--text-primary);
+    }
+    .brand .sub{
+      color:var(--text-secondary); 
+      font-weight:800; 
+      font-size:12px; 
+      margin-top:4px;
+    }
+
+    .block-title{
+      margin:24px 0 8px;
+      font-size:12px;
+      font-weight:1000;
+      letter-spacing:.28px;
+      text-transform:uppercase;
+      color: var(--text-secondary);
+    }
+    .navlist{
+      display:grid; 
+      gap:8px;
+    }
+    .navlist a{
+      display:block;
+      padding:10px 12px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.14);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--text-primary);
+      font-weight:900;
+      font-size:13px;
+    }
+    .navlist a:hover{
+      background: rgba(0,0,0,.18); 
+      border-color: rgba(255,255,255,.14);
+    }
+
+    .rg{
+      margin-top:24px;
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(242,212,43,.10), rgba(0,0,0,.10));
+    }
+    .rg b{
+      display:block; 
+      font-weight:1000; 
+      color: var(--text-primary);
+    }
+    .rg p{
+      margin:8px 0 0; 
+      color:var(--text-secondary); 
+      font-size:12.5px; 
+      line-height:1.55;
+    }
+
+    /* Main content как на главной */
+    .main{
+      min-width:0;
+      border-radius: var(--r2);
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 14px;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--header-bg);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      position:sticky; 
+      top:18px; 
+      z-index:30;
+      margin-bottom:18px;
+    }
+
+    .toplinks{
+      display:flex; 
+      gap:12px; 
+      flex-wrap:wrap; 
+      align-items:center;
+    }
+    .toplinks a{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .toplinks a:hover{
+      border-color: rgba(255,255,255,.14);
+      background: rgba(0,0,0,.1);
+    }
+
+    .top-actions{
+      display:flex; 
+      gap:10px; 
+      align-items:center; 
+      flex-wrap:wrap;
+    }
+    .lang{
+      display:inline-flex; 
+      align-items:center; 
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .btn{
+      display:inline-flex; 
+      align-items:center; 
+      justify-content:center;
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.16);
+      color: var(--text-primary);
+      font-weight:1000;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .btn.green{
+      background: linear-gradient(180deg, var(--accent-yellow), var(--accent-yellow-dark));
+      border-color: rgba(0,0,0,.25);
+      color: #07140e;
+    }
+    .btn.ghost{
+      background: rgba(0,0,0,.10);
+    }
+
+    /* Content container */
+    .content{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2px 30px;
+    }
+
+    /* Page header */
+    .page-header{
+      margin-bottom:30px;
+      text-align:center;
+      padding:20px;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--bg-section);
+      box-shadow: var(--shadow);
+    }
+
+    h1{
+      margin:0 0 12px;
+      font-size:36px;
+      line-height:1.05;
+      text-transform:uppercase;
+      letter-spacing:.2px;
+      font-weight:1100;
+      color: var(--text-primary);
+    }
+
+    .last-updated{
+      color: var(--text-secondary);
+      font-size:14px;
+      font-weight:900;
+    }
+
+    /* Decorative title line with diamonds (как на главной) */
+    .titlebar{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:10px 10px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.16);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--accent-yellow);
+      font-weight:1100;
+      letter-spacing:.3px;
+      text-transform:uppercase;
+      font-size:14px;
+      margin:30px 0 20px;
+    }
+    .titlebar .line{
+      height:2px;
+      width: 90px;
+      background: linear-gradient(90deg, rgba(242,212,43,0), var(--accent-yellow), rgba(242,212,43,0));
+      opacity:.9;
+      border-radius:99px;
+    }
+    .dia{
+      width:9px;
+      height:9px;
+      transform:rotate(45deg);
+      background: var(--accent-yellow);
+      border-radius:2px;
+      box-shadow: 0 0 18px rgba(242,212,43,.25);
+    }
+
+    /* Content sections (как на главной) */
+    .sec{
+      margin-top:16px;
+      border-radius: 22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--bg-section);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .sec .head{
+      padding:14px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.1);
+    }
+    .sec .body{
+      padding:20px 24px 24px;
+    }
+
+    p, li{
+      color: var(--text-primary);
+      opacity: 0.9;
+      line-height:1.7;
+      font-size:15px;
+    }
+    ul, ol{
+      margin:15px 0;
+      padding-left:20px;
+    }
+    li{
+      margin-bottom:8px;
+    }
+
+    strong{
+      color: var(--accent-yellow-light);
+      font-weight:1000;
+    }
+
+    .highlight{
+      background: rgba(235,204,42,.05);
+      border-left:4px solid var(--accent-yellow);
+      padding:16px 20px;
+      margin:25px 0;
+      border-radius:0 8px 8px 0;
+    }
+
+    .warning-box{
+      background: rgba(182, 54, 18, 0.1);
+      border:1px solid rgba(182, 54, 18, 0.3);
+      border-radius:12px;
+      padding:18px;
+      margin:20px 0;
+    }
+
+    .warning-box strong{
+      color: #ff6b4a;
+    }
+
+    .info-box{
+      background: var(--bg-overlay);
+      border-radius:12px;
+      padding:18px;
+      margin:20px 0;
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    /* Numbered sections */
+    .numbered-section{
+      counter-reset: section;
+      margin:25px 0;
+    }
+
+    .numbered-section h3{
+      counter-increment: section;
+      position:relative;
+      padding-left:40px;
+    }
+
+    .numbered-section h3:before{
+      content: counter(section) ".";
+      position:absolute;
+      left:0;
+      top:0;
+      color: var(--accent-yellow);
+      font-weight:1000;
+      font-size:24px;
+    }
+
+    /* Table for conditions */
+    .conditions-table{
+      width:100%;
+      border-collapse:collapse;
+      margin:20px 0;
+      background: var(--bg-overlay);
+      border-radius:12px;
+      overflow:hidden;
+    }
+
+    .conditions-table th{
+      background: rgba(0,0,0,.3);
+      padding:16px;
+      text-align:left;
+      font-weight:1000;
+      color: var(--text-primary);
+      border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    .conditions-table td{
+      padding:16px;
+      border-bottom:1px solid rgba(255,255,255,.05);
+      color: var(--text-primary);
+      opacity:0.9;
+    }
+
+    .conditions-table tr:last-child td{
+      border-bottom:none;
+    }
+
+    /* Footer как на главной */
+    .footer{
+      margin-top:30px;
+      border-radius: 22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      background-color: var(--bg-section);
+    }
+    .footer .inner{
+      padding:20px 24px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:20px;
+    }
+    .footlinks{
+      display:flex; 
+      gap:12px; 
+      flex-wrap:wrap;
+      color: var(--text-primary);
+      opacity: 0.9;
+      font-weight:900;
+      font-size:13px;
+    }
+    .footlinks a:hover{
+      text-decoration:underline; 
+      color: var(--accent-yellow);
+    }
+    .tiny{
+      color: var(--text-secondary); 
+      font-size:12.5px; 
+      line-height:1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px){
+      .footer .inner{
+        grid-template-columns: 1fr;
+        gap:15px;
+      }
+      
+      .conditions-table{
+        font-size:14px;
+      }
+      
+      .conditions-table th,
+      .conditions-table td{
+        padding:12px 8px;
+      }
+      
+      h1{
+        font-size:28px;
+      }
+      
+      .sec .body{
+        padding:16px 20px 20px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+      }
+      
+      .toplinks, .top-actions{
+        width:100%;
+        justify-content:center;
+      }
+      
+      .conditions-table{
+        display:block;
+        overflow-x:auto;
+      }
+      
+      .numbered-section h3{
+        padding-left:30px;
+      }
+      
+      .numbered-section h3:before{
+        font-size:20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar 1: main menu -->
+    <aside class="sb" aria-label="Seitenmenü">
+      <div class="brand">
+        <img src="/images/logo.png" alt="AllySpin Logo" onerror="this.style.display='none'">
+        <div>
+          <div class="name">ALLYSPIN</div>
+          <div class="sub">Nutzungsbedingungen</div>
+        </div>
+      </div>
+
+      <div class="block-title">Navigation</div>
+      <div class="navlist">
+        <a href="/">← Zurück zur Startseite</a>
+        <a href="#geltungsbereich">1. Geltungsbereich</a>
+        <a href="#leistungsbeschreibung">2. Leistungsbeschreibung</a>
+        <a href="#nutzungsrechte">3. Nutzungsrechte</a>
+        <a href="#pflichten">4. Nutzerpflichten</a>
+        <a href="#haftungsausschluss">5. Haftungsausschluss</a>
+        <a href="#urheberrecht">6. Urheberrecht</a>
+        <a href="#datenschutz">7. Datenschutz</a>
+        <a href="#links">8. Externe Links</a>
+        <a href="#aenderungen">9. Änderungen</a>
+        <a href="#schlussbestimmungen">10. Schlussbestimmungen</a>
+      </div>
+
+      <div class="rg">
+        <b>Wichtiger Hinweis</b>
+        <p>Diese Bedingungen gelten nur für die Informationsseite. Für die Spielplattform gelten die AGB des Anbieters.</p>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar" aria-label="Topbar">
+        <nav class="toplinks" aria-label="Schnelllinks">
+          <a href="/">Startseite</a>
+          <a href="#geltungsbereich">AGB</a>
+          <a href="#haftungsausschluss">Haftung</a>
+        </nav>
+
+        <div class="top-actions">
+          <div class="lang" aria-label="Sprache">🇩🇪 DE <span style="opacity:.75;">›</span></div>
+          <a class="btn ghost" href="/">Zur Startseite</a>
+        </div>
+      </header>
+
+      <div class="content">
+        <!-- Page header -->
+        <div class="page-header">
+          <h1>Nutzungsbedingungen</h1>
+          <div class="last-updated">Letzte Aktualisierung: <span id="currentDate"></span></div>
+        </div>
+
+        <div class="warning-box">
+          <p><strong>⚠️ WICHTIGER HINWEIS:</strong> Diese Nutzungsbedingungen gelten ausschließlich für die Informationswebsite <strong>casino-allyspin.com</strong>. Für die eigentliche Spielplattform von AllySpin Casino gelten die Allgemeinen Geschäftsbedingungen des jeweiligen Lizenznehmers.</p>
+        </div>
+
+        <!-- 1. Geltungsbereich -->
+        <section class="sec" id="geltungsbereich" aria-label="Geltungsbereich">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              1. Geltungsbereich
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Allgemeines</h3>
+              <p>Diese Allgemeinen Nutzungsbedingungen (AGB) regeln das Vertragsverhältnis zwischen der Redaktion casino-allyspin.com (nachfolgend "Betreiber" genannt) und den Nutzern (nachfolgend "Nutzer" genannt) der Website casino-allyspin.com.</p>
+              
+              <h3>Informationscharakter</h3>
+              <p>Die Website casino-allyspin.com dient ausschließlich <strong>Informationszwecken</strong> und bietet keine Glücksspieldienstleistungen an. Es werden keine Wetten oder Spiele angeboten, und es können keine Gewinne erzielt werden.</p>
+              
+              <h3>Altersbeschränkung</h3>
+              <p>Die Nutzung dieser Website ist Personen unter 18 Jahren nicht gestattet. Durch die Nutzung der Website bestätigen Sie, dass Sie das 18. Lebensjahr vollendet haben.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Leistungsbeschreibung -->
+        <section class="sec" id="leistungsbeschreibung" aria-label="Leistungsbeschreibung">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              2. Leistungsbeschreibung
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Umfang der Leistungen</h3>
+              <p>Der Betreiber stellt auf der Website folgende Informationen bereit:</p>
+              <ul>
+                <li>Beschreibungen von Glücksspielplattformen und deren Merkmalen</li>
+                <li>Vergleichende Informationen zu verschiedenen Anbietern</li>
+                <li>Allgemeine Informationen zu Glücksspielthemen</li>
+                <li>Hinweise zu verantwortungsvollem Spielen</li>
+                <li>Links zu externen Anbietern</li>
+              </ul>
+              
+              <div class="info-box">
+                <p><strong>Keine Dienstleistungen:</strong> Der Betreiber bietet keine der folgenden Leistungen an:</p>
+                <ul>
+                  <li>Registrierung für Glücksspielkonten</li>
+                  <li>Entgegennahme von Ein- oder Auszahlungen</li>
+                  <li>Durchführung von Glücksspielen</li>
+                  <li>Kundensupport für Spielplattformen</li>
+                  <li>Vergabe von Boni oder Gewinnen</li>
+                </ul>
+              </div>
+              
+              <h3>Kosten</h3>
+              <p>Die Nutzung der Informationsseite ist für den Nutzer kostenfrei. Es werden keine Gebühren für den Zugriff auf die Informationen erhoben.</p>
+              
+              <h3>Verfügbarkeit</h3>
+              <p>Der Betreiber bemüht sich um eine hohe Verfügbarkeit der Website. Technisch bedingte Ausfälle oder Wartungsarbeiten können jedoch nicht ausgeschlossen werden.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Nutzungsrechte -->
+        <section class="sec" id="nutzungsrechte" aria-label="Nutzungsrechte">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              3. Nutzungsrechte
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Einräumung von Nutzungsrechten</h3>
+              <p>Dem Nutzer wird das einfache, nicht ausschließliche Recht eingeräumt, die Website für persönliche, nicht kommerzielle Informationszwecke zu nutzen.</p>
+              
+              <h3>Beschränkungen</h3>
+              <p>Folgende Nutzungen sind untersagt:</p>
+              <ul>
+                <li>Kommerzielle Nutzung der Inhalte</li>
+                <li>Vervielfältigung oder Verbreitung der Inhalte ohne Genehmigung</li>
+                <li>Veränderung oder Manipulation der Website</li>
+                <li>Automatisiertes Abrufen von Daten (Scraping, Crawling)</li>
+                <li>Nutzung, die die Funktionalität beeinträchtigt</li>
+              </ul>
+              
+              <h3>Benutzerkonto</h3>
+              <p>Für die Nutzung dieser Informationsseite ist keine Registrierung oder Anmeldung erforderlich. Es werden keine Benutzerkonten angeboten.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Nutzerpflichten -->
+        <section class="sec" id="pflichten" aria-label="Nutzerpflichten">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              4. Nutzerpflichten
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Allgemeine Pflichten</h3>
+              <p>Der Nutzer verpflichtet sich:</p>
+              <ul>
+                <li>Die Website nur zu legalen Zwecken zu nutzen</li>
+                <li>Keine rechtswidrigen Inhalte aufzurufen oder zu verbreiten</li>
+                <li>Die Rechte Dritter zu beachten</li>
+                <li>Die Altersbeschränkung von 18 Jahren einzuhalten</li>
+                <li>Keine Störung des Websitebetriebs zu verursachen</li>
+              </ul>
+              
+              <h3>Verantwortungsvolles Spielen</h3>
+              <p>Der Nutzer bestätigt, dass er:</p>
+              <ul>
+                <li>Über die Risiken von Glücksspiel informiert ist</li>
+                <li>Glücksspiel nur als Unterhaltung und nicht als Einnahmequelle betrachtet</li>
+                <li>Bei Problemen mit Glücksspielsucht professionelle Hilfe sucht</li>
+                <li>Persönliche Limits setzt und einhält</li>
+              </ul>
+              
+              <div class="highlight">
+                <p><strong>Hilfe bei Spielsucht:</strong> Wenn Sie oder jemand, den Sie kennen, Probleme mit Glücksspiel haben, wenden Sie sich an:</p>
+                <ul>
+                  <li>Bundeszentrale für gesundheitliche Aufklärung: www.bzga.de</li>
+                  <li>Telefonseelsorge: 0800 111 0 111</li>
+                  <li>Anonyme Glücksspieler: www.anonime-giocatorii.org</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. Haftungsausschluss -->
+        <section class="sec" id="haftungsausschluss" aria-label="Haftungsausschluss">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              5. Haftungsausschluss
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Allgemeiner Haftungsausschluss</h3>
+              <p>Der Betreiber haftet nicht für:</p>
+              <ul>
+                <li>Korrektheit, Vollständigkeit oder Aktualität der Informationen</li>
+                <li>Verfügbarkeit oder ununterbrochenen Zugriff auf die Website</li>
+                <li>Schäden durch Nutzung oder Nichtnutzung der Informationen</li>
+                <li>Technische Probleme oder Datenverluste</li>
+              </ul>
+              
+              <h3>Haftung für externe Anbieter</h3>
+              <p>Der Betreiber haftet nicht für:</p>
+              <ul>
+                <li>Leistungen externer Glücksspielanbieter</li>
+                <li>Gewinnversprechen oder Bonusangebote Dritter</li>
+                <li>Probleme bei Registrierung oder Spiel bei externen Anbietern</li>
+                <li>Finanzielle Verluste durch Glücksspiel</li>
+              </ul>
+              
+              <h3>Haftungsbegrenzung</h3>
+              <p>Die Haftung des Betreibers ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. Für leichte Fahrlässigkeit haftet der Betreiber nur bei Verletzung wesentlicher Vertragspflichten.</p>
+              
+              <div class="warning-box">
+                <p><strong>WICHTIG:</strong> Die Informationen auf dieser Seite stellen keine Rechts- oder Finanzberatung dar. Bei Fragen zu Glücksspiel oder finanziellen Angelegenheiten wenden Sie sich an professionelle Berater.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. Urheberrecht -->
+        <section class="sec" id="urheberrecht" aria-label="Urheberrecht">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              6. Urheberrecht & Marken
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Urheberrecht</h3>
+              <p>Alle Inhalte dieser Website (Texte, Bilder, Grafiken, Layout) sind urheberrechtlich geschützt. Die Vervielfältigung, Verbreitung oder sonstige Nutzung bedarf der schriftlichen Genehmigung des Betreibers.</p>
+              
+              <h3>Markenrechte</h3>
+              <p>Alle auf der Website genannten Marken, Logos und Produktnamen sind Eigentum ihrer jeweiligen Rechteinhaber. Die Nennung erfolgt zu informatorischen Zwecken und stellt keine Genehmigung oder Zusammenarbeit dar.</p>
+              
+              <table class="conditions-table">
+                <thead>
+                  <tr>
+                    <th>Marke</th>
+                    <th>Rechteinhaber</th>
+                    <th>Verwendungszweck</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AllySpin</td>
+                    <td>Jeweiliger Lizenznehmer</td>
+                    <td>Informative Beschreibung</td>
+                  </tr>
+                  <tr>
+                    <td>Casino-allyspin.com</td>
+                    <td>Betreiber dieser Website</td>
+                    <td>Eigene Marke</td>
+                  </tr>
+                  <tr>
+                    <td>Externe Zahlungslogos</td>
+                    <td>Jeweilige Unternehmen</td>
+                    <td>Informative Darstellung</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. Datenschutz -->
+        <section class="sec" id="datenschutz" aria-label="Datenschutz">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              7. Datenschutz
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Datenschutzerklärung</h3>
+              <p>Die Erhebung und Verarbeitung personenbezogener Daten erfolgt gemäß unserer separaten <a href="/privacy-policy.html" style="color: var(--accent-yellow);">Datenschutzerklärung</a>.</p>
+              
+              <h3>Trennung von Spielerdaten</h3>
+              <p>Der Betreiber dieser Informationsseite:</p>
+              <ul>
+                <li>Speichert keine Spielerdaten externer Plattformen</li>
+                <li>Hat keinen Zugriff auf Spielerkonten</li>
+                <li>Verarbeitet keine finanziellen Transaktionen</li>
+                <li>Führt keine Identitätsprüfungen (KYC) durch</li>
+              </ul>
+              
+              <div class="info-box">
+                <p><strong>Externe Datenschutzbestimmungen:</strong> Bei der Nutzung externer Glücksspielplattformen gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Diese sind in der Regel umfangreicher und beinhalten die Verarbeitung sensibler Daten.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. Externe Links -->
+        <section class="sec" id="links" aria-label="Externe Links">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              8. Externe Links
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Allgemeines zu Links</h3>
+              <p>Die Website enthält Links zu externen Websites, insbesondere zu Glücksspielanbietern. Diese Links werden zu Informationszwecken bereitgestellt.</p>
+              
+              <h3>Keine Haftung für externe Inhalte</h3>
+              <p>Der Betreiber:</p>
+              <ul>
+                <li>Übernimmt keine Haftung für Inhalte externer Websites</li>
+                <li>Garantiert nicht für Verfügbarkeit oder Korrektheit externer Inhalte</li>
+                <li>Überprüft nicht regelmäßig alle verlinkten Seiten</li>
+                <li>Ist nicht verantwortlich für Änderungen auf externen Seiten</li>
+              </ul>
+              
+              <h3>Hinweise zu Glücksspiellinks</h3>
+              <p>Bei Links zu Glücksspielanbietern weist der Betreiber ausdrücklich darauf hin:</p>
+              <ul>
+                <li>Vor Registrierung die AGB und Datenschutzbestimmungen prüfen</li>
+                <li>Sich über lokale Glücksspielgesetze zu informieren</li>
+                <li>Nur mit Geldern zu spielen, deren Verlust verkraftbar ist</li>
+                <li>Bei Problemen sofort Hilfe zu suchen</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9. Änderungen -->
+        <section class="sec" id="aenderungen" aria-label="Änderungen">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              9. Änderungen der Bedingungen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Änderungsrecht</h3>
+              <p>Der Betreiber behält sich das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern oder zu ergänzen. Aktualisierte Versionen werden auf dieser Seite veröffentlicht.</p>
+              
+              <h3>Gültigkeit</h3>
+              <p>Änderungen werden mit ihrer Veröffentlichung auf der Website wirksam. Durch fortgesetzte Nutzung der Website nach Veröffentlichung von Änderungen erklärt der Nutzer sein Einverständnis mit den geänderten Bedingungen.</p>
+              
+              <h3>Benachrichtigung</h3>
+              <p>Der Nutzer ist verpflichtet, sich regelmäßig über die aktuellen Nutzungsbedingungen zu informieren. Eine gesonderte Benachrichtigung über Änderungen erfolgt nicht.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10. Schlussbestimmungen -->
+        <section class="sec" id="schlussbestimmungen" aria-label="Schlussbestimmungen">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              10. Schlussbestimmungen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="numbered-section">
+              <h3>Gerichtsstand und anwendbares Recht</h3>
+              <p>Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts. Gerichtsstand für alle Streitigkeiten aus diesem Vertragsverhältnis ist, sofern gesetzlich zulässig, der Sitz des Betreibers.</p>
+              
+              <h3>Salvatorische Klausel</h3>
+              <p>Sollte eine Bestimmung dieser Nutzungsbedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle der unwirksamen Bestimmung tritt eine wirksame Regelung, die dem wirtschaftlichen Zweck am nächsten kommt.</p>
+              
+              <h3>Vertragssprache</h3>
+              <p>Vertragssprache ist Deutsch. Übersetzungen in andere Sprachen dienen nur der Information. Im Falle von Widersprüchen gilt die deutsche Version.</p>
+              
+              <div class="highlight">
+                <p><strong>Kontakt bei Fragen:</strong> Bei Fragen zu diesen Nutzungsbedingungen wenden Sie sich bitte an: <strong>info@casino-allyspin.com</strong></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final notice -->
+        <div class="warning-box" style="margin-top:30px;">
+          <p><strong>⚠️ ERNEUTER HINWEIS:</strong> Diese Nutzungsbedingungen gelten <strong>ausschließlich für die Informationswebsite casino-allyspin.com</strong>. Für die tatsächliche Nutzung der AllySpin Casino Spielplattform gelten die Allgemeinen Geschäftsbedingungen des jeweiligen Lizenznehmers, die Sie vor der Registrierung sorgfältig lesen sollten.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" aria-label="Footer">
+          <div class="inner">
+            <div>
+              <div style="font-weight:1100; color: var(--text-primary);">© <span id="currentYear"></span> casino-allyspin.com</div>
+              <p class="tiny" style="margin:8px 0 0;">
+                Allgemeine Geschäftsbedingungen • Informationsseite • Alle Angaben ohne Gewähr
+              </p>
+              <div class="footlinks" style="margin-top:10px;">
+                <a href="/">Startseite</a>
+                <a href="/privacy-policy.html">Datenschutzerklärung</a>
+                <a href="/terms.html">Nutzungsbedingungen</a>
+                <a href="/responsible-gaming.html">Responsible Gaming</a>
+                <a href="/disclaimer.html">Disclaimer</a>
+              </div>
+            </div>
+
+            <div>
+              <p class="tiny" style="margin:10px 0 0; text-align:right;">
+                18+ • Keine Glücksspieldienstleistungen<br>
+                Verantwortungsvoll spielen: www.bzga.de<br>
+                Stand: <span id="currentDateShort"></span>
+              </p>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Set current dates
+    const currentDate = new Date();
+    
+    // Long date format
+    const optionsLong = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('currentDate').textContent = 
+      currentDate.toLocaleDateString('de-DE', optionsLong);
+    
+    // Short date format
+    const optionsShort = { year: 'numeric', month: '2-digit', day: '2-digit' };
+    document.getElementById('currentDateShort').textContent = 
+      currentDate.toLocaleDateString('de-DE', optionsShort);
+    
+    // Set current year
+    document.getElementById('currentYear').textContent = currentDate.getFullYear();
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if(targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if(targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

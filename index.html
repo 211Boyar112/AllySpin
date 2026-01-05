@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>AllySpin Casino Login</title>
+  <meta name="description" content="AllySpin Casino Login: Anmeldung, Bonus, App, Zahlungen und Support – kompakt erklärt. 18+ • Informationsseite." />
+  <link rel="canonical" href="https://casino-allyspin.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AllySpin Casino Login" />
+  <meta property="og:description" content="Anmeldung, Bonus, App, Zahlungen, Live-Casino & Support – übersichtlich erklärt. 18+." />
+  <meta property="og:url" content="https://casino-allyspin.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Basic SEO extras -->
+  <meta name="theme-color" content="#170a2a" />
+
+  <style>
+    :root{
+      /* Основные цвета фона */
+      --bg-main: #242F3C; /* основной фон страницы */
+      --bg-section: #212C38; /* фон блоков/секций */
+      --bg-overlay: #150913; /* для оверлеев/теней/подложек */
+      
+      /* Шапка / акценты бордо */
+      --header-bg: #360812; /* бордовый фон хедера */
+      --header-accent: #682F14; /* тёплый бордо/коричневый */
+      
+      /* Акцентные цвета */
+      --accent-yellow: #F2D42B; /* яркий жёлтый (primary CTA) */
+      --accent-yellow-dark: #EBCC2A; /* жёлтый чуть темнее */
+      --accent-yellow-light: #E4D47A; /* светло-жёлтый */
+      
+      /* Цвета текста */
+      --text-primary: #EFF0F3; /* основной светлый текст */
+      --text-secondary: #B1ADBF; /* приглушённый текст */
+      
+      /* Дополнительные переменные */
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.04);
+      --stroke: rgba(255,255,255,.12);
+      
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --r: 18px;
+      --r2: 22px;
+      --max: 1180px;
+      --sb: 260px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-main);
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout: только левое меню + основной контент */
+    .app{
+      display:grid;
+      grid-template-columns: var(--sb) 1fr;
+      min-height:100%;
+      gap:18px;
+      padding:18px;
+    }
+
+    .sb{
+      position:sticky; top:18px;
+      height: calc(100vh - 36px);
+      overflow:auto;
+      border-radius: var(--r2);
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      padding:14px;
+      background-color: var(--bg-section);
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      padding:10px;
+      border-radius: 16px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .brand img{
+      width:46px;height:46px;border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+    }
+    .brand .name{
+      font-weight:1000;
+      letter-spacing:.2px;
+      font-size:20px;
+      line-height:1.1;
+      color: var(--text-primary);
+    }
+    .brand .sub{color:var(--text-secondary); font-weight:800; font-size:12px; margin-top:4px}
+
+    .menu{
+      margin-top:12px;
+      display:grid;
+      gap:8px;
+    }
+    .item{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 12px;
+      border-radius: 16px;
+      border:1px solid transparent;
+      background: rgba(0,0,0,.16);
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .item:hover{
+      border-color:rgba(255,255,255,.14); 
+      background: rgba(0,0,0,.20);
+    }
+    .item span{display:flex; align-items:center; gap:10px}
+    .ico{
+      width:22px;height:22px;border-radius:8px;
+      background: linear-gradient(180deg, var(--accent-yellow-light), rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .arrow{opacity:.7}
+
+    .block-title{
+      margin:14px 0 8px;
+      font-size:12px;
+      font-weight:1000;
+      letter-spacing:.28px;
+      text-transform:uppercase;
+      color: var(--text-secondary);
+    }
+    .navlist{
+      display:grid; gap:8px;
+    }
+    .navlist a{
+      display:block;
+      padding:10px 12px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.14);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--text-primary);
+      font-weight:900;
+      font-size:13px;
+    }
+    .navlist a:hover{
+      background: rgba(0,0,0,.18); 
+      border-color: rgba(255,255,255,.14);
+    }
+
+    .rg{
+      margin-top:14px;
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(242,212,43,.10), rgba(0,0,0,.10));
+    }
+    .rg b{display:block; font-weight:1000; color: var(--text-primary)}
+    .rg p{margin:8px 0 0; color:var(--text-secondary); font-size:12.5px; line-height:1.55}
+
+    /* Main topbar */
+    .main{
+      min-width:0;
+      border-radius: var(--r2);
+    }
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 14px;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--header-bg);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      position:sticky; top:18px; z-index:30;
+    }
+    .toplinks{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    .toplinks a{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .toplinks a:hover{
+      border-color: rgba(255,255,255,.14);
+      background: rgba(0,0,0,.1);
+    }
+
+    .top-actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .lang{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.16);
+      color: var(--text-primary);
+      font-weight:1000;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .btn.green{
+      background: linear-gradient(180deg, var(--accent-yellow), var(--accent-yellow-dark));
+      border-color: rgba(0,0,0,.25);
+      color: #07140e;
+    }
+    .btn.ghost{background: rgba(0,0,0,.10)}
+
+    /* Content container */
+    .content{
+      max-width: var(--max);
+      margin: 14px auto 0;
+      padding: 0 2px 30px;
+    }
+
+    /* Hero like screenshot */
+    .hero{
+      margin-top:14px;
+      border-radius: 24px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow);
+      background:
+        radial-gradient(1200px 500px at 20% 20%, rgba(242,212,43,.15), rgba(0,0,0,0) 60%),
+        radial-gradient(900px 500px at 75% 30%, rgba(235,204,42,.10), rgba(0,0,0,0) 60%),
+        linear-gradient(135deg, rgba(242,212,43,.15), rgba(0,0,0,.10) 40%, rgba(228,212,122,.05));
+      position:relative;
+      background-color: var(--bg-section);
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:0;
+      background: url("/images/hero-bg.jpg") center/cover no-repeat;
+      opacity:.28;
+      filter:saturate(1.1) contrast(1.05);
+      pointer-events:none;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      min-height: 320px;
+    }
+    .hero-left{
+      padding:26px 24px 22px;
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.16);
+      color: var(--text-primary);
+      font-weight:1000;
+      letter-spacing:.2px;
+      font-size:12px;
+    }
+    .kicker b{color: var(--accent-yellow)}
+    h1{
+      margin:14px 0 0;
+      font-size:36px;
+      line-height:1.05;
+      text-transform:uppercase;
+      letter-spacing:.2px;
+      font-weight:1100;
+      color: var(--text-primary);
+    }
+    .hero p{
+      margin:12px 0 0;
+      color: var(--text-primary);
+      opacity: 0.9;
+      line-height:1.6;
+      max-width: 62ch;
+      font-size:14px;
+    }
+    .hero-cta{
+      margin-top:16px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .hero-right{
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      padding: 0 14px;
+    }
+    .hero-right img{
+      width:min(380px, 95%);
+      height: min(320px, 95%);
+      object-fit:contain;
+      filter: drop-shadow(0 22px 40px rgba(0,0,0,.55));
+    }
+
+    /* Info strip (4 pills) */
+    .strip{
+      margin-top:12px;
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:10px;
+    }
+    .pill2{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.14);
+      background-color: var(--bg-section);
+    }
+    .pill2 .l{
+      display:flex; align-items:center; gap:10px;
+      font-weight:1000;
+      color: var(--text-primary);
+      font-size:13px;
+    }
+    .pill2 .v{font-weight:1100; color: var(--text-primary)}
+    .badge{
+      font-size:12px;
+      font-weight:1100;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--text-primary);
+    }
+
+    /* Section wrapper like screenshot */
+    .sec{
+      margin-top:16px;
+      border-radius: 22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--bg-section);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .sec .head{
+      padding:14px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.1);
+    }
+
+    /* Decorative title line with diamonds */
+    .titlebar{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:10px 10px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.16);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--accent-yellow);
+      font-weight:1100;
+      letter-spacing:.3px;
+      text-transform:uppercase;
+      font-size:14px;
+    }
+    .titlebar .line{
+      height:2px;
+      width: 90px;
+      background: linear-gradient(90deg, rgba(242,212,43,0), var(--accent-yellow), rgba(242,212,43,0));
+      opacity:.9;
+      border-radius:99px;
+    }
+    .dia{
+      width:9px;height:9px;
+      transform:rotate(45deg);
+      background: var(--accent-yellow);
+      border-radius:2px;
+      box-shadow: 0 0 18px rgba(242,212,43,.25);
+    }
+
+    .sec .body{padding:14px 16px 16px}
+    p,li{color: var(--text-primary); opacity: 0.9; line-height:1.7; font-size:14px}
+    ul{margin:10px 0; padding-left:18px}
+
+    .cards{
+      margin-top:12px;
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:12px;
+    }
+    .card{
+      padding:14px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      text-align:center;
+      background-color: var(--bg-overlay);
+    }
+    .card b{display:block; font-weight:1100; margin-top:6px; color: var(--text-primary)}
+    .card .s{color: var(--text-secondary); font-size:12.5px; margin-top:4px}
+    .card .icon{
+      width:34px;height:34px;border-radius:12px;
+      margin:0 auto;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, var(--accent-yellow-light), rgba(0,0,0,.14));
+    }
+
+    /* Big bonus banner */
+    .bonus{
+      margin-top:14px;
+      border-radius: 22px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(135deg, rgba(235,204,42,.25), rgba(54,8,18,.15));
+      position:relative;
+      min-height: 170px;
+      display:flex;
+      align-items:stretch;
+      box-shadow: var(--shadow);
+      background-color: var(--header-bg);
+    }
+    .bonus::before{
+      content:"";
+      position:absolute; inset:0;
+      background: url("/images/bonus-bg.jpg") center/cover no-repeat;
+      opacity:.25;
+      pointer-events:none;
+    }
+    .bonus .left{
+      position:relative;
+      padding:18px 16px;
+      flex:1;
+    }
+    .bonus .k{color: var(--accent-yellow); font-weight:1100; text-transform:uppercase; letter-spacing:.3px}
+    .bonus .big{
+      margin-top:8px;
+      font-size:34px;
+      line-height:1.05;
+      font-weight:1200;
+      text-transform:uppercase;
+      color: var(--text-primary);
+    }
+    .bonus .sub{
+      margin-top:6px; 
+      color: var(--text-primary); 
+      opacity: 0.8;
+      font-weight:1000; 
+      text-transform:uppercase; 
+      font-size:12px; 
+      letter-spacing:.25px
+    }
+    .bonus .cta{margin-top:14px}
+    .bonus .right{
+      position:relative;
+      width: 280px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:flex-end;
+      padding:10px;
+    }
+    .bonus .right img{
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      filter: drop-shadow(0 18px 38px rgba(0,0,0,.55));
+    }
+
+    /* Tables like screenshot */
+    .table-wrap{
+      margin-top:12px;
+      overflow:auto;
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.14);
+      background-color: var(--bg-overlay);
+    }
+    table{width:100%; border-collapse:collapse; min-width:760px}
+    th,td{padding:12px 12px; border-bottom:1px solid rgba(255,255,255,.10); text-align:left; font-size:14px}
+    th{background: rgba(255,255,255,.05); color: var(--text-primary); font-weight:1100}
+    td{color: var(--text-primary); opacity: 0.9}
+
+    /* Ratings grid like screenshot */
+    .ratings{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:12px;
+      margin-top:12px;
+    }
+    .rate{
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      padding:12px;
+      text-align:center;
+      background-color: var(--bg-overlay);
+    }
+    .rate .t{font-weight:1100; color: var(--text-primary)}
+    .stars{margin-top:8px; letter-spacing:2px; color: var(--accent-yellow)}
+    .score{
+      margin-top:8px;
+      font-weight:1200;
+      color: var(--accent-yellow);
+    }
+
+    /* FAQ accordion */
+    .faq details{
+      margin-top:10px;
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      overflow:hidden;
+      background-color: var(--bg-overlay);
+    }
+    .faq summary{
+      cursor:pointer;
+      list-style:none;
+      padding:12px 14px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      font-weight:1100;
+      background: rgba(0,0,0,.12);
+      color: var(--text-primary);
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq .ans{
+      padding:12px 14px;
+      border-top:1px solid rgba(255,255,255,.10);
+      color: var(--text-primary);
+      opacity: 0.9;
+      line-height:1.7;
+      font-size:14px;
+    }
+
+    /* Author block */
+    .author{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:14px;
+      border-radius: 18px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.14);
+      margin-top:12px;
+      background-color: var(--bg-overlay);
+    }
+    .author img{
+      width:64px; height:64px;
+      border-radius: 18px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+    }
+    .author b{display:block; font-weight:1200; color: var(--text-primary)}
+    .author .meta{color: var(--text-secondary); font-size:12.5px; margin-top:4px}
+    .author p{margin:8px 0 0; color: var(--text-primary); opacity: 0.9; font-size:13.5px}
+
+    /* Footer like screenshot */
+    .footer{
+      margin-top:16px;
+      border-radius: 22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      background-color: var(--bg-section);
+    }
+    .footer .inner{
+      padding:14px 16px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:14px;
+    }
+    .footlinks{
+      display:flex; gap:12px; flex-wrap:wrap;
+      color: var(--text-primary);
+      opacity: 0.9;
+      font-weight:900;
+      font-size:13px;
+    }
+    .footlinks a:hover{text-decoration:underline; color: var(--accent-yellow)}
+    .payrow{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; align-items:center;
+      opacity:.85;
+    }
+    .payrow img{height:22px; filter: grayscale(100%); opacity:.9}
+    .tiny{color: var(--text-secondary); font-size:12.5px; line-height:1.6}
+
+    /* Responsive */
+    @media (max-width: 1180px){
+      .app{grid-template-columns: var(--sb) 1fr; }
+      .content{max-width: 980px}
+    }
+    @media (max-width: 940px){
+      .app{grid-template-columns: 1fr; padding:12px}
+      .sb{display:none}
+      .topbar{top:12px}
+      .hero-grid{grid-template-columns: 1fr}
+      .hero-right{padding: 0 10px}
+      .strip{grid-template-columns: repeat(2, 1fr)}
+      .cards{grid-template-columns: repeat(2, 1fr)}
+      .ratings{grid-template-columns: repeat(2, 1fr)}
+      .footer .inner{grid-template-columns: 1fr}
+      .payrow{justify-content:flex-start}
+      h1{font-size:30px}
+    }
+  </style>
+
+  <!-- Minimal schema (safe, without claims) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"AllySpin Casino Login",
+    "url":"https://casino-allyspin.com/",
+    "inLanguage":"de"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Sidebar 1: main menu like screenshot -->
+    <aside class="sb" aria-label="Seitenmenü">
+      <div class="brand">
+        <img src="/images/logo.png" alt="AllySpin Logo" onerror="this.style.display='none'">
+        <div>
+          <div class="name">ALLYSPIN</div>
+          <div class="sub">Login • Bonus • App</div>
+        </div>
+      </div>
+
+      <div class="menu" aria-label="Menü">
+        <a class="item" href="#games"><span><span class="ico"></span>Alle Spiele</span><span class="arrow">›</span></a>
+        <a class="item" href="#tournaments"><span><span class="ico"></span>Turniere</span><span class="arrow">›</span></a>
+        <a class="item" href="#promos"><span><span class="ico"></span>Aktionen</span><span class="arrow">›</span></a>
+        <a class="item" href="#vip"><span><span class="ico"></span>VIP</span><span class="arrow">›</span></a>
+        <a class="item" href="#payments"><span><span class="ico"></span>Zahlungen</span><span class="arrow">›</span></a>
+        <a class="item" href="#faq"><span><span class="ico"></span>FAQ</span><span class="arrow">›</span></a>
+      </div>
+
+      <div class="block-title">Navigation</div>
+      <div class="navlist">
+        <a href="#login">Willkommen & Login</a>
+        <a href="#register">Registrierungsprozess</a>
+        <a href="#games">Spiele & Spielarten</a>
+        <a href="#providers">Softwareanbieter</a>
+        <a href="#payments">Zahlungsoptionen</a>
+        <a href="#support">Kundensupport</a>
+        <a href="#safety">Sicherheit & Fair Play</a>
+        <a href="#ratings">Bewertungen</a>
+        <a href="#faq">Häufige Fragen</a>
+      </div>
+
+      <div class="rg" style="margin-top:14px;">
+        <b>18+ • Verantwortungsvoll spielen</b>
+        <p>Diese Seite ist eine Informationsübersicht. Glücksspiel kann süchtig machen – setzen Sie Limits und spielen Sie nur zu Unterhaltung.</p>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar" aria-label="Topbar">
+        <nav class="toplinks" aria-label="Schnelllinks">
+          <a href="#bonus">Bonus</a>
+          <a href="#app">App</a>
+          <a href="#login">Login</a>
+        </nav>
+
+        <div class="top-actions">
+          <div class="lang" aria-label="Sprache">🇩🇪 DE <span style="opacity:.75;">›</span></div>
+          <a class="btn ghost" href="#login">Login</a>
+          <a class="btn green" href="#register">Registrieren</a>
+        </div>
+      </header>
+
+      <div class="content">
+
+        <!-- HERO -->
+        <section class="hero" id="login" aria-label="AllySpin Casino Login">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <div class="kicker">SICHERES KASINO <b>96 / 100</b></div>
+
+              <h1>AllySpin Casino Login</h1>
+
+              <p>
+                AllySpin ist eine moderne Casino-Plattform mit klarer Navigation, schneller Anmeldung und einer breiten Auswahl
+                an Slots, Live-Tischen und weiteren Kategorien. Auf dieser Seite finden Sie einen kompakten Guide zu
+                <strong>Login/Anmeldung</strong>, Bonus-Bereichen, Zahlungen und mobiler Nutzung (App oder Website).
+              </p>
+
+              <div class="hero-cta">
+                <a class="btn green" href="#register">Zur Anmeldung</a>
+                <a class="btn" href="#bonus">Bonus ansehen</a>
+              </div>
+
+              <p style="margin-top:10px; font-size:12.5px; color: var(--text-secondary);">
+                18+ • Informationsseite • Keine Gewinnversprechen.
+              </p>
+            </div>
+
+            <div class="hero-right" aria-label="Hero Bild">
+              <img src="/images/hero-character.png" alt="AllySpin Visual" loading="lazy"
+                   onerror="this.style.display='none';">
+            </div>
+          </div>
+        </section>
+
+        <!-- 4-info strip -->
+        <section class="strip" aria-label="Kurzinfos">
+          <div class="pill2"><div class="l"><span class="ico"></span> Krypto-Zahlungen</div><div class="v">BTC/USDT*</div></div>
+          <div class="pill2"><div class="l"><span class="ico"></span> Auszahlungsquote</div><div class="v">> 96%*</div></div>
+          <div class="pill2"><div class="l"><span class="ico"></span> Lizenz</div><div class="v">Info prüfen</div></div>
+          <div class="pill2"><div class="l"><span class="ico"></span> Steuern</div><div class="v">abhängig*</div></div>
+        </section>
+        <p style="margin:10px 2px 0; color: var(--text-secondary); font-size:12.5px;">*Abhängig von Region/Version und den Angaben im Konto.</p>
+
+        <!-- Intro text block like screenshot -->
+        <section class="sec" aria-label="Einführung">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Überblick
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Wer nach <strong>Casino AllySpin</strong> sucht, hat meist ein klares Ziel: schnell einloggen, die Oberfläche verstehen
+              und Bonus- oder Zahlungsinfos ohne Umwege finden. Genau dafür ist diese Startseite gedacht:
+              als strukturierte Übersicht mit den wichtigsten Punkten – Login, Registrierung, Spiele, Live-Casino,
+              Einzahlungen/Auszahlungen und Support.
+            </p>
+            <p>
+              Wir halten die Texte bewusst sachlich: keine übertriebenen Versprechen, sondern verständliche Hinweise,
+              worauf Nutzer vor der Anmeldung achten sollten (z. B. Bonusbedingungen, Limits, Verifizierung).
+            </p>
+
+            <div class="cards" aria-label="Highlights">
+              <div class="card">
+                <div class="icon"></div>
+                <b>Krypto-Bereich</b>
+                <div class="s">Einzahlung & Auszahlung je nach Methode</div>
+              </div>
+              <div class="card">
+                <div class="icon"></div>
+                <b>Viele Zahlungsarten</b>
+                <div class="s">Karte, Wallets, Krypto*</div>
+              </div>
+              <div class="card">
+                <div class="icon"></div>
+                <b>Software-Mix</b>
+                <div class="s">Slots + Live-Tische</div>
+              </div>
+              <div class="card">
+                <div class="icon"></div>
+                <b>Support</b>
+                <div class="s">Hilfe bei Login & KYC*</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bonus banner like screenshot -->
+        <section class="bonus" id="bonus" aria-label="Bonus Banner">
+          <div class="left">
+            <div class="k">Willkommensbonus</div>
+            <div class="big">Bonus bis zu 1.000 €<br/>+ Freispiele*</div>
+            <div class="sub">Erster Einzahlungsbonus</div>
+            <div class="cta">
+              <a class="btn green" href="#promos">Registrieren</a>
+            </div>
+          </div>
+          <div class="right" aria-label="Bonus Bild">
+            <img src="/images/bonus-chest.png" alt="Bonus Visual" loading="lazy" onerror="this.style.display='none'">
+          </div>
+        </section>
+        <p style="margin:10px 2px 0; color: var(--text-secondary); font-size:12.5px;">*Nur wenn im Casino aktuell verfügbar. Bedingungen im Konto prüfen.</p>
+
+        <!-- Registration process -->
+        <section class="sec" id="register" aria-label="Registrierungsprozess">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Registrierungsprozess
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Die <strong>AllySpin Casino-Anmeldung</strong> ist in der Regel in wenigen Minuten erledigt. Typisch sind Basisdaten,
+              eine gültige E-Mail und ein sicheres Passwort. Anschließend kann eine Verifizierung (KYC) erforderlich sein,
+              besonders vor Auszahlungen.
+            </p>
+            <ul>
+              <li><strong>Schritt 1:</strong> „Registrieren" wählen und Konto-Daten eingeben.</li>
+              <li><strong>Schritt 2:</strong> E-Mail bestätigen (falls verlangt).</li>
+              <li><strong>Schritt 3:</strong> Optional: Profil vervollständigen (Währung, Land, Basisdaten).</li>
+              <li><strong>Schritt 4:</strong> Für Auszahlungen: Verifizierung nachreichen (Ausweis/Adresse je nach Regeln).</li>
+            </ul>
+            <a class="btn green" href="#login">Zum Login</a>
+          </div>
+        </section>
+
+        <!-- Games -->
+        <section class="sec" id="games" aria-label="Spiele und Spielarten">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Spiele und Spielarten
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              AllySpin kombiniert klassische Slots mit modernen Features sowie Live-Tischen. Für Nutzer wichtig:
+              gute Filter, schnelle Ladezeiten und eine klare Trennung nach Kategorien (Slots, Live-Casino, Turniere).
+            </p>
+
+            <div class="table-wrap" role="region" aria-label="Spielübersicht Tabelle">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Kategorie</th>
+                    <th>Was Sie erwartet</th>
+                    <th>Worauf achten</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Slots</td>
+                    <td>Viel Auswahl, verschiedene Volatilitäten & Features</td>
+                    <td>RTP/Regeln je Spiel prüfen</td>
+                  </tr>
+                  <tr>
+                    <td>Live-Casino</td>
+                    <td>Roulette, Blackjack, weitere Tischformate</td>
+                    <td>Stabile Verbindung, Limits</td>
+                  </tr>
+                  <tr id="tournaments">
+                    <td>Turniere</td>
+                    <td>Races/Leaderboards (wenn verfügbar)</td>
+                    <td>Wertung & teilnehmende Spiele</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Providers -->
+        <section class="sec" id="providers" aria-label="Softwareanbieter">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Softwareanbieter
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Bei der Auswahl eines Casinos achten viele auf bekannte Studios und darauf, wie flüssig Spiele auf Mobilgeräten laufen.
+              Entscheidend ist weniger der Name, sondern die Kombination aus Stabilität, Ladezeit und Transparenz bei Regeln/Features.
+            </p>
+            <a class="btn green" href="#payments">Zahlungen ansehen</a>
+          </div>
+        </section>
+
+        <!-- Payments -->
+        <section class="sec" id="payments" aria-label="Zahlungsoptionen">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Zahlungsoptionen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Ein häufiger Grund für die Suche nach <strong>AllySpin Casino deposit</strong> ist die Frage:
+              Welche Methoden sind verfügbar und wie schnell wird verarbeitet? Unten eine neutrale Orientierung –
+              die finalen Zeiten/Limits stehen im Kassenbereich.
+            </p>
+
+            <div class="table-wrap" role="region" aria-label="Zahlungen Tabelle">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Methode</th>
+                    <th>Typ</th>
+                    <th>Einzahlung</th>
+                    <th>Auszahlung</th>
+                    <th>Hinweise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kredit-/Debitkarte</td>
+                    <td>Karte</td>
+                    <td>meist sofort</td>
+                    <td>1–3 Werktage</td>
+                    <td>KYC kann erforderlich sein</td>
+                  </tr>
+                  <tr>
+                    <td>E-Wallets</td>
+                    <td>Wallet</td>
+                    <td>meist sofort</td>
+                    <td>0–24h</td>
+                    <td>anbieterabhängig</td>
+                  </tr>
+                  <tr>
+                    <td>BTC / USDT</td>
+                    <td>Krypto</td>
+                    <td>netzwerkabhängig</td>
+                    <td>netzwerkabhängig</td>
+                    <td>Netzwerkgebühren möglich</td>
+                  </tr>
+                  <tr>
+                    <td>Banktransfer</td>
+                    <td>Bank</td>
+                    <td>1–3 Tage</td>
+                    <td>1–3 Tage</td>
+                    <td>bankabhängig</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p style="margin-top:10px; color: var(--text-secondary); font-size:12.5px;">
+              Tipp: Für Auszahlungen (z. B. „prelievo") ist die Verifizierung in vielen Casinos Standard.
+            </p>
+          </div>
+        </section>
+
+        <!-- Support -->
+        <section class="sec" id="support" aria-label="Kundensupport">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Kundensupport
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Wenn der <strong>AllySpin Casino Login</strong> nicht funktioniert, helfen meist diese Punkte:
+              Passwort-Reset, Browser-Cache, Gerätewechsel oder ein kurzer Check, ob Wartung läuft. Bei Konto-Themen
+              (z. B. Dokumente/KYC) ist der Support der schnellste Weg.
+            </p>
+            <ul>
+              <li>Live-Chat: gut für Login-Probleme & Zahlungsstatus.</li>
+              <li>E-Mail: sinnvoll bei Verifizierung oder längeren Fällen.</li>
+              <li>FAQ: häufige Fragen kompakt.</li>
+            </ul>
+            <a class="btn green" href="#faq">Zu den Fragen</a>
+          </div>
+        </section>
+
+        <!-- Safety -->
+        <section class="sec" id="safety" aria-label="Sicherheit & Fair Play">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Sicherheit & Fair Play
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Gute Basis-Signale sind: verschlüsselte Verbindung (SSL), transparente Bonusregeln, klare Limits und
+              Tools für verantwortungsbewusstes Spielen. Für Nutzer zählt außerdem, ob der Login stabil ist und
+              ob Sicherheitsoptionen im Konto verfügbar sind.
+            </p>
+          </div>
+        </section>
+
+        <!-- Ratings -->
+        <section class="sec" id="ratings" aria-label="Bewertungen">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Bewertungen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>
+              Dieser Bereich ist als Überblick gedacht. Eine <strong>AllySpin Casino review</strong> sollte immer
+              die gleichen Punkte prüfen: Bonusbedingungen, Zahlungen, Support und Bedienbarkeit.
+            </p>
+
+            <div class="ratings" aria-label="Rating Kacheln">
+              <div class="rate">
+                <div class="t">Live-Casino</div>
+                <div class="stars">★★★★★</div>
+                <div class="score">9/10</div>
+              </div>
+              <div class="rate">
+                <div class="t">Boni</div>
+                <div class="stars">★★★★★</div>
+                <div class="score">9/10</div>
+              </div>
+              <div class="rate">
+                <div class="t">Slots</div>
+                <div class="stars">★★★★★</div>
+                <div class="score">8/10</div>
+              </div>
+              <div class="rate">
+                <div class="t">Support</div>
+                <div class="stars">★★★★★</div>
+                <div class="score">9/10</div>
+              </div>
+            </div>
+
+            <a class="btn green" href="#register" style="margin-top:12px;">Registrieren</a>
+          </div>
+        </section>
+
+        <!-- Author -->
+        <section class="sec" aria-label="Autor">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Autor
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="author">
+              <img src="/images/author.jpg" alt="Autor" onerror="this.style.display='none'">
+              <div>
+                <b>Redaktion casino-allyspin.com</b>
+                <div class="meta">Fokus: UX-Checks, Login-Guides, Zahlungsübersichten • Aktualisiert: <span id="upd"></span></div>
+                <p>
+                  Wir erstellen strukturierte Übersichten zu Login-Abläufen, Bonus-Grundlagen und Zahlungswegen.
+                  Ziel ist Verständlichkeit: kurze Schritte, klare Hinweise, ohne künstliche Keyword-Blöcke.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="sec faq" id="faq" aria-label="Häufig gestellte Fragen">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              Häufig gestellte Fragen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <details>
+              <summary>Wie kann ich mich beim AllySpin Casino Login anmelden? <span style="opacity:.7;">+</span></summary>
+              <div class="ans">
+                Öffnen Sie „Login", geben Sie Ihre Zugangsdaten ein und bestätigen Sie ggf. Sicherheitsabfragen.
+                Falls ein Fehler erscheint: Passwort zurücksetzen, Cache/Cookies prüfen oder den Support kontaktieren.
+              </div>
+            </details>
+
+            <details>
+              <summary>Gibt es eine AllySpin Casino App? <span style="opacity:.7;">+</span></summary>
+              <div class="ans">
+                Je nach Version steht eine App oder eine mobile Website bereit. Nutzen Sie bevorzugt offizielle Links im Casino-Menü.
+              </div>
+            </details>
+
+            <details>
+              <summary>Wie funktionieren Einzahlungen und Auszahlungen? <span style="opacity:.7;">+</span></summary>
+              <div class="ans">
+                Methoden und Zeiten hängen von der Kasse ab (Karte, Wallets, Krypto). Für Auszahlungen kann eine Verifizierung erforderlich sein.
+              </div>
+            </details>
+
+            <details>
+              <summary>Gibt es Boni ohne Einzahlung? <span style="opacity:.7;">+</span></summary>
+              <div class="ans">
+                Solche Aktionen sind nicht immer aktiv. Wenn verfügbar, stehen Regeln (Umsatz, Laufzeit, Limits) in der Promo-Sektion.
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" aria-label="Footer">
+          <div class="inner">
+            <div>
+              <div style="font-weight:1100; color: var(--text-primary);">© <span id="y"></span> casino-allyspin.com</div>
+              <p class="tiny" style="margin:8px 0 0;">
+                Informationsseite (18+) • Keine Gewinngarantien • Angebote/Regeln können sich ändern.
+              </p>
+              <div class="footlinks" style="margin-top:10px;">
+                <a href="/privacy-policy.html">Datenschutz</a>
+                <a href="/terms.html">Nutzungsbedingungen</a>
+                <a href="/responsible-gaming.html">Responsible Gaming</a>
+                <a href="/disclaimer.html">Disclaimer</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="payrow" aria-label="Payments">
+                <img src="/images/pay/visa.png" alt="Visa" onerror="this.style.display='none'">
+                <img src="/images/pay/mastercard.png" alt="Mastercard" onerror="this.style.display='none'">
+                <img src="/images/pay/skrill.png" alt="Skrill" onerror="this.style.display='none'">
+                <img src="/images/pay/neteller.png" alt="Neteller" onerror="this.style.display='none'">
+                <img src="/images/pay/usdt.png" alt="USDT" onerror="this.style.display='none'">
+                <img src="/images/pay/btc.png" alt="BTC" onerror="this.style.display='none'">
+              </div>
+              <p class="tiny" style="margin:10px 0 0; text-align:right;">
+                18+ • Spielen Sie verantwortungsvoll.
+              </p>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const d = new Date();
+    const fmt = d.toLocaleDateString('de-DE', {year:'numeric', month:'2-digit', day:'2-digit'});
+    document.getElementById('upd').textContent = fmt;
+  </script>
+</body>
+</html>

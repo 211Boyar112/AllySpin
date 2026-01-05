@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Datenschutzerklärung - AllySpin Casino</title>
+  <meta name="description" content="Datenschutzerklärung von AllySpin Casino: Informationen zur Erhebung, Verarbeitung und Nutzung personenbezogener Daten. 18+ • Informationsseite." />
+  <link rel="canonical" href="https://casino-allyspin.com/privacy-policy.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Datenschutzerklärung - AllySpin Casino" />
+  <meta property="og:description" content="Wie wir personenbezogene Daten verarbeiten - vollständige Datenschutzerklärung. 18+." />
+  <meta property="og:url" content="https://casino-allyspin.com/privacy-policy.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Basic SEO extras -->
+  <meta name="theme-color" content="#170a2a" />
+
+  <style>
+    :root{
+      /* Основные цвета фона */
+      --bg-main: #242F3C; /* основной фон страницы */
+      --bg-section: #212C38; /* фон блоков/секций */
+      --bg-overlay: #150913; /* для оверлеев/теней/подложек */
+      
+      /* Шапка / акценты бордо */
+      --header-bg: #360812; /* бордовый фон хедера */
+      --header-accent: #682F14; /* тёплый бордо/коричневый */
+      
+      /* Акцентные цвета */
+      --accent-yellow: #F2D42B; /* яркий жёлтый (primary CTA) */
+      --accent-yellow-dark: #EBCC2A; /* жёлтый чуть темнее */
+      --accent-yellow-light: #E4D47A; /* светло-жёлтый */
+      
+      /* Цвета текста */
+      --text-primary: #EFF0F3; /* основной светлый текст */
+      --text-secondary: #B1ADBF; /* приглушённый текст */
+      
+      /* Дополнительные переменные */
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.04);
+      --stroke: rgba(255,255,255,.12);
+      
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --r: 18px;
+      --r2: 22px;
+      --max: 1180px;
+      --sb: 260px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-main);
+      line-height:1.7;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout как на главной странице */
+    .app{
+      display:grid;
+      grid-template-columns: var(--sb) 1fr;
+      min-height:100%;
+      gap:18px;
+      padding:18px;
+    }
+
+    @media (max-width: 940px){
+      .app{
+        grid-template-columns: 1fr;
+        padding:12px;
+      }
+      .sb{display:none}
+    }
+
+    /* Sidebar как на главной */
+    .sb{
+      position:sticky; 
+      top:18px;
+      height: calc(100vh - 36px);
+      overflow:auto;
+      border-radius: var(--r2);
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      padding:14px;
+      background-color: var(--bg-section);
+    }
+
+    .brand{
+      display:flex; 
+      align-items:center; 
+      gap:10px;
+      padding:10px;
+      border-radius: 16px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .brand img{
+      width:46px;
+      height:46px;
+      border-radius:14px;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+    }
+    .brand .name{
+      font-weight:1000;
+      letter-spacing:.2px;
+      font-size:20px;
+      line-height:1.1;
+      color: var(--text-primary);
+    }
+    .brand .sub{
+      color:var(--text-secondary); 
+      font-weight:800; 
+      font-size:12px; 
+      margin-top:4px;
+    }
+
+    .block-title{
+      margin:24px 0 8px;
+      font-size:12px;
+      font-weight:1000;
+      letter-spacing:.28px;
+      text-transform:uppercase;
+      color: var(--text-secondary);
+    }
+    .navlist{
+      display:grid; 
+      gap:8px;
+    }
+    .navlist a{
+      display:block;
+      padding:10px 12px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.14);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--text-primary);
+      font-weight:900;
+      font-size:13px;
+    }
+    .navlist a:hover{
+      background: rgba(0,0,0,.18); 
+      border-color: rgba(255,255,255,.14);
+    }
+
+    .rg{
+      margin-top:24px;
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(242,212,43,.10), rgba(0,0,0,.10));
+    }
+    .rg b{
+      display:block; 
+      font-weight:1000; 
+      color: var(--text-primary);
+    }
+    .rg p{
+      margin:8px 0 0; 
+      color:var(--text-secondary); 
+      font-size:12.5px; 
+      line-height:1.55;
+    }
+
+    /* Main content как на главной */
+    .main{
+      min-width:0;
+      border-radius: var(--r2);
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 14px;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--header-bg);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      position:sticky; 
+      top:18px; 
+      z-index:30;
+      margin-bottom:18px;
+    }
+
+    .toplinks{
+      display:flex; 
+      gap:12px; 
+      flex-wrap:wrap; 
+      align-items:center;
+    }
+    .toplinks a{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .toplinks a:hover{
+      border-color: rgba(255,255,255,.14);
+      background: rgba(0,0,0,.1);
+    }
+
+    .top-actions{
+      display:flex; 
+      gap:10px; 
+      align-items:center; 
+      flex-wrap:wrap;
+    }
+    .lang{
+      display:inline-flex; 
+      align-items:center; 
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      color: var(--text-primary);
+      font-weight:950;
+    }
+    .btn{
+      display:inline-flex; 
+      align-items:center; 
+      justify-content:center;
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.16);
+      color: var(--text-primary);
+      font-weight:1000;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .btn.green{
+      background: linear-gradient(180deg, var(--accent-yellow), var(--accent-yellow-dark));
+      border-color: rgba(0,0,0,.25);
+      color: #07140e;
+    }
+    .btn.ghost{
+      background: rgba(0,0,0,.10);
+    }
+
+    /* Content container */
+    .content{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2px 30px;
+    }
+
+    /* Page header */
+    .page-header{
+      margin-bottom:30px;
+      text-align:center;
+      padding:20px;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--bg-section);
+      box-shadow: var(--shadow);
+    }
+
+    h1{
+      margin:0 0 12px;
+      font-size:36px;
+      line-height:1.05;
+      text-transform:uppercase;
+      letter-spacing:.2px;
+      font-weight:1100;
+      color: var(--text-primary);
+    }
+
+    .last-updated{
+      color: var(--text-secondary);
+      font-size:14px;
+      font-weight:900;
+    }
+
+    /* Decorative title line with diamonds (как на главной) */
+    .titlebar{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:10px 10px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.16);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--accent-yellow);
+      font-weight:1100;
+      letter-spacing:.3px;
+      text-transform:uppercase;
+      font-size:14px;
+      margin:30px 0 20px;
+    }
+    .titlebar .line{
+      height:2px;
+      width: 90px;
+      background: linear-gradient(90deg, rgba(242,212,43,0), var(--accent-yellow), rgba(242,212,43,0));
+      opacity:.9;
+      border-radius:99px;
+    }
+    .dia{
+      width:9px;
+      height:9px;
+      transform:rotate(45deg);
+      background: var(--accent-yellow);
+      border-radius:2px;
+      box-shadow: 0 0 18px rgba(242,212,43,.25);
+    }
+
+    /* Content sections (как на главной) */
+    .sec{
+      margin-top:16px;
+      border-radius: 22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: var(--bg-section);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .sec .head{
+      padding:14px 16px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.1);
+    }
+    .sec .body{
+      padding:20px 24px 24px;
+    }
+
+    p, li{
+      color: var(--text-primary);
+      opacity: 0.9;
+      line-height:1.7;
+      font-size:15px;
+    }
+    ul{
+      margin:15px 0;
+      padding-left:20px;
+    }
+    li{
+      margin-bottom:8px;
+    }
+
+    strong{
+      color: var(--accent-yellow-light);
+      font-weight:1000;
+    }
+
+    .highlight{
+      background: rgba(235,204,42,.05);
+      border-left:4px solid var(--accent-yellow);
+      padding:16px 20px;
+      margin:25px 0;
+      border-radius:0 8px 8px 0;
+    }
+
+    .contact-info{
+      background: var(--bg-overlay);
+      border-radius:16px;
+      padding:20px;
+      margin:20px 0;
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    /* Table for data categories */
+    .data-table{
+      width:100%;
+      border-collapse:collapse;
+      margin:20px 0;
+      background: var(--bg-overlay);
+      border-radius:12px;
+      overflow:hidden;
+    }
+
+    .data-table th{
+      background: rgba(0,0,0,.3);
+      padding:16px;
+      text-align:left;
+      font-weight:1000;
+      color: var(--text-primary);
+      border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    .data-table td{
+      padding:16px;
+      border-bottom:1px solid rgba(255,255,255,.05);
+      color: var(--text-primary);
+      opacity:0.9;
+    }
+
+    .data-table tr:last-child td{
+      border-bottom:none;
+    }
+
+    /* Footer как на главной */
+    .footer{
+      margin-top:30px;
+      border-radius: 22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      background-color: var(--bg-section);
+    }
+    .footer .inner{
+      padding:20px 24px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:20px;
+    }
+    .footlinks{
+      display:flex; 
+      gap:12px; 
+      flex-wrap:wrap;
+      color: var(--text-primary);
+      opacity: 0.9;
+      font-weight:900;
+      font-size:13px;
+    }
+    .footlinks a:hover{
+      text-decoration:underline; 
+      color: var(--accent-yellow);
+    }
+    .tiny{
+      color: var(--text-secondary); 
+      font-size:12.5px; 
+      line-height:1.6;
+    }
+
+    /* Responsive для таблиц */
+    @media (max-width: 768px){
+      .footer .inner{
+        grid-template-columns: 1fr;
+        gap:15px;
+      }
+      
+      .data-table{
+        font-size:14px;
+      }
+      
+      .data-table th,
+      .data-table td{
+        padding:12px 8px;
+      }
+      
+      h1{
+        font-size:28px;
+      }
+      
+      .sec .body{
+        padding:16px 20px 20px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+      }
+      
+      .toplinks, .top-actions{
+        width:100%;
+        justify-content:center;
+      }
+      
+      .data-table{
+        display:block;
+        overflow-x:auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar 1: main menu -->
+    <aside class="sb" aria-label="Seitenmenü">
+      <div class="brand">
+        <img src="/images/logo.png" alt="AllySpin Logo" onerror="this.style.display='none'">
+        <div>
+          <div class="name">ALLYSPIN</div>
+          <div class="sub">Datenschutz & Rechtliches</div>
+        </div>
+      </div>
+
+      <div class="block-title">Navigation</div>
+      <div class="navlist">
+        <a href="/">← Zurück zur Startseite</a>
+        <a href="#einleitung">1. Einleitung</a>
+        <a href="#verantwortlicher">2. Verantwortlicher</a>
+        <a href="#daten-erhebung">3. Erhobene Daten</a>
+        <a href="#cookies">4. Cookies</a>
+        <a href="#datenweitergabe">5. Datenweitergabe</a>
+        <a href="#datensicherheit">6. Datensicherheit</a>
+        <a href="#ihre-rechte">7. Ihre Rechte</a>
+        <a href="#glucksspiel">8. Glücksspiel</a>
+        <a href="#aufbewahrung">9. Aufbewahrung</a>
+        <a href="#anderungen">10. Änderungen</a>
+        <a href="#kontakt">11. Kontakt</a>
+      </div>
+
+      <div class="rg">
+        <b>18+ • Informationsseite</b>
+        <p>Diese Seite dient Informationszwecken. Für die Spielplattform gelten die Datenschutzbestimmungen des Anbieters.</p>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar" aria-label="Topbar">
+        <nav class="toplinks" aria-label="Schnelllinks">
+          <a href="/">Startseite</a>
+          <a href="#einleitung">Datenschutz</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <div class="top-actions">
+          <div class="lang" aria-label="Sprache">🇩🇪 DE <span style="opacity:.75;">›</span></div>
+          <a class="btn ghost" href="/">Zur Startseite</a>
+        </div>
+      </header>
+
+      <div class="content">
+        <!-- Page header -->
+        <div class="page-header">
+          <h1>Datenschutzerklärung</h1>
+          <div class="last-updated">Letzte Aktualisierung: <span id="currentDate"></span></div>
+        </div>
+
+        <!-- 1. Einleitung -->
+        <section class="sec" id="einleitung" aria-label="Einleitung">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              1. Einleitung
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Diese Datenschutzerklärung informiert Sie darüber, 
+            wie wir auf dieser Informationsseite personenbezogene Daten erheben, verarbeiten und nutzen.</p>
+            
+            <div class="highlight">
+              <p><strong>Hinweis:</strong> Diese Datenschutzerklärung gilt für die Informationsseite casino-allyspin.com. 
+              Für das eigentliche AllySpin Casino gilt die Datenschutzerklärung des Anbieters, die nach der Registrierung im Kundenbereich eingesehen werden kann.</p>
+            </div>
+
+            <p>Diese Seite dient ausschließlich Informationszwecken und stellt keine Glücksspieldienstleistungen bereit. 
+            Alle Daten, die im Zusammenhang mit der Nutzung der eigentlichen Spielplattform erhoben werden, unterliegen der Datenschutzerklärung des jeweiligen Anbieters.</p>
+          </div>
+        </section>
+
+        <!-- 2. Verantwortlicher -->
+        <section class="sec" id="verantwortlicher" aria-label="Verantwortlicher">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              2. Verantwortlicher
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+            
+            <div class="contact-info">
+              <h3>Redaktion casino-allyspin.com</h3>
+              <p><strong>E-Mail:</strong> datenschutz@casino-allyspin.com</p>
+              <p><strong>Hinweis:</strong> Diese Kontaktdaten dienen ausschließlich der Kommunikation bezüglich dieser Informationswebsite.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Erhobene Daten -->
+        <section class="sec" id="daten-erhebung" aria-label="Erhobene Daten">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              3. Erhobene Daten
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <h3>3.1 Technisch notwendige Daten</h3>
+            <p>Beim Aufruf unserer Website werden automatisch technische Daten erfasst:</p>
+            
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Datenkategorie</th>
+                  <th>Beispiel</th>
+                  <th>Zweck</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>IP-Adresse</td>
+                  <td>192.168.1.1</td>
+                  <td>Technische Bereitstellung</td>
+                </tr>
+                <tr>
+                  <td>Browsertyp</td>
+                  <td>Chrome 120.0</td>
+                  <td>Kompatibilitätsoptimierung</td>
+                </tr>
+                <tr>
+                  <td>Betriebssystem</td>
+                  <td>Windows 11</td>
+                  <td>Statistische Auswertung</td>
+                </tr>
+                <tr>
+                  <td>Zugriffszeitpunkt</td>
+                  <td>2024-03-15 14:30</td>
+                  <td>Sicherheitsüberwachung</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="highlight">
+              <p><strong>Wichtig:</strong> Wir erheben keine sensiblen Daten wie Finanzdaten, Personalausweisdaten, Spieldaten oder Konto-Login-Daten für Spielplattformen.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Cookies -->
+        <section class="sec" id="cookies" aria-label="Cookies">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              4. Cookies & Tracking
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <h3>4.1 Notwendige Cookies</h3>
+            <p>Wir setzen technisch notwendige Cookies ein:</p>
+            <ul>
+              <li><strong>Session-Cookies:</strong> Für die Funktionalität der Website</li>
+              <li><strong>Präferenz-Cookies:</strong> Für Spracheinstellungen</li>
+              <li><strong>Sicherheits-Cookies:</strong> Zum Schutz vor Missbrauch</li>
+            </ul>
+
+            <h3>4.2 Analyse-Cookies (opt-in)</h3>
+            <p>Mit Ihrer Einwilligung können wir verwenden:</p>
+            <ul>
+              <li><strong>Google Analytics:</strong> Für Besucherstatistiken</li>
+              <li><strong>Heatmaps:</strong> Zur Nutzungsanalyse</li>
+            </ul>
+
+            <p>Sie können Ihre Cookie-Einstellungen jederzeit über unser Cookie-Banner ändern.</p>
+          </div>
+        </section>
+
+        <!-- 5. Datenweitergabe -->
+        <section class="sec" id="datenweitergabe" aria-label="Datenweitergabe">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              5. Datenweitergabe
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Grundsätzlich geben wir Ihre Daten nicht an Dritte weiter, außer in folgenden Fällen:</p>
+            
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Empfänger</th>
+                  <th>Datenkategorie</th>
+                  <th>Rechtsgrundlage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hosting-Provider</td>
+                  <td>Technische Log-Daten</td>
+                  <td>Vertragserfüllung</td>
+                </tr>
+                <tr>
+                  <td>Analytics-Dienste</td>
+                  <td>Anonymisierte Daten</td>
+                  <td>Einwilligung</td>
+                </tr>
+                <tr>
+                  <td>Strafverfolgung</td>
+                  <td>Bei Verpflichtung</td>
+                  <td>Rechtliche Pflicht</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="highlight">
+              <p><strong>Keine Weitergabe an Casinobetreiber:</strong> Wir geben keine Daten an Glücksspielanbieter weiter. 
+              Der Besuch dieser Informationsseite bleibt vom tatsächlichen Spielkonto getrennt.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. Datensicherheit -->
+        <section class="sec" id="datensicherheit" aria-label="Datensicherheit">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              6. Datensicherheit
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten zu schützen:</p>
+            <ul>
+              <li><strong>Verschlüsselung:</strong> SSL/TLS für alle Übertragungen</li>
+              <li><strong>Zugriffskontrolle:</strong> Beschränkter Datenzugang</li>
+              <li><strong>Regelmäßige Updates:</strong> Sicherheitsupdates für Systeme</li>
+              <li><strong>Backup-Systeme:</strong> Regelmäßige Datensicherungen</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 7. Ihre Rechte -->
+        <section class="sec" id="ihre-rechte" aria-label="Ihre Rechte">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              7. Ihre Rechte
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie folgende Rechte:</p>
+            
+            <div class="contact-info">
+              <h3>Übersicht Ihrer Rechte</h3>
+              <ul>
+                <li><strong>Auskunftsrecht:</strong> Auskunft über gespeicherte Daten</li>
+                <li><strong>Berichtigungsrecht:</strong> Berichtigung unrichtiger Daten</li>
+                <li><strong>Löschungsrecht:</strong> Löschung Ihrer Daten</li>
+                <li><strong>Einschränkung:</strong> Einschränkung der Verarbeitung</li>
+                <li><strong>Widerspruchsrecht:</strong> Widerspruch gegen Verarbeitung</li>
+                <li><strong>Datenübertragbarkeit:</strong> Daten in strukturiertem Format</li>
+              </ul>
+            </div>
+
+            <p>Um Ihre Rechte auszuüben, wenden Sie sich bitte an: <strong>datenschutz@casino-allyspin.com</strong></p>
+          </div>
+        </section>
+
+        <!-- 8. Glücksspiel -->
+        <section class="sec" id="glucksspiel" aria-label="Glücksspiel">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              8. Glücksspiel-Hinweise
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <h3>8.1 Trennung von Informationen und Spiel</h3>
+            <p>Diese Website und die Spielplattform sind getrennte Einheiten:</p>
+            <ul>
+              <li>Wir speichern keine Spielhistorie oder Einsätze</li>
+              <li>Wir haben keinen Zugriff auf Spielerkonten</li>
+              <li>Wir verarbeiten keine Ein- oder Auszahlungen</li>
+              <li>Wir führen keine Spielerüberprüfungen (KYC) durch</li>
+            </ul>
+
+            <div class="highlight">
+              <p><strong>Empfehlung:</strong> Lesen Sie vor der Registrierung beim Casinobetreiber unbedingt dessen Datenschutzerklärung, 
+              da diese wesentlich umfangreichere Datenverarbeitung beinhaltet.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9. Aufbewahrung -->
+        <section class="sec" id="aufbewahrung" aria-label="Aufbewahrung">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              9. Aufbewahrungsfristen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir speichern Ihre Daten nur so lange wie notwendig:</p>
+            
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Datenkategorie</th>
+                  <th>Aufbewahrungsdauer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Server-Logfiles</td>
+                  <td>30 Tage</td>
+                </tr>
+                <tr>
+                  <td>Kontaktanfragen</td>
+                  <td>12 Monate</td>
+                </tr>
+                <tr>
+                  <td>Cookie-Präferenzen</td>
+                  <td>24 Monate</td>
+                </tr>
+                <tr>
+                  <td>Analytics-Daten</td>
+                  <td>14 Monate</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 10. Änderungen -->
+        <section class="sec" id="anderungen" aria-label="Änderungen">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              10. Änderungen
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder verbesserte Services anzupassen.</p>
+            
+            <div class="highlight">
+              <p><strong>Aktualisierungsbenachrichtigung:</strong> Wesentliche Änderungen werden auf dieser Seite veröffentlicht. 
+              Die "Letzte Aktualisierung" am Anfang dieser Seite zeigt an, wann die Erklärung zuletzt überarbeitet wurde.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 11. Kontakt -->
+        <section class="sec" id="kontakt" aria-label="Kontakt">
+          <div class="head">
+            <div class="titlebar">
+              <span class="line"></span><span class="dia"></span>
+              11. Kontakt
+              <span class="dia"></span><span class="line"></span>
+            </div>
+          </div>
+          <div class="body">
+            <p>Für Fragen zum Datenschutz kontaktieren Sie uns bitte unter:</p>
+            
+            <div class="contact-info">
+              <h3>Datenschutzbeauftragter</h3>
+              <p><strong>E-Mail:</strong> datenschutz@casino-allyspin.com</p>
+              <p><strong>Antwortzeit:</strong> Innerhalb von 14 Werktagen</p>
+            </div>
+
+            <p>Sie haben außerdem das Recht, sich bei der zuständigen Aufsichtsbehörde zu beschweren:</p>
+            
+            <div class="contact-info">
+              <h3>Zuständige Aufsichtsbehörde</h3>
+              <p><strong>Landesbeauftragter für Datenschutz</strong> Ihres Bundeslandes</p>
+              <p><strong>Alternative:</strong> Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" aria-label="Footer">
+          <div class="inner">
+            <div>
+              <div style="font-weight:1100; color: var(--text-primary);">© <span id="currentYear"></span> casino-allyspin.com</div>
+              <p class="tiny" style="margin:8px 0 0;">
+                Informationsseite (18+) • Keine Glücksspieldienstleistungen • Alle Angaben ohne Gewähr
+              </p>
+              <div class="footlinks" style="margin-top:10px;">
+                <a href="/">Startseite</a>
+                <a href="/privacy-policy.html">Datenschutzerklärung</a>
+                <a href="/terms.html">Nutzungsbedingungen</a>
+                <a href="/responsible-gaming.html">Responsible Gaming</a>
+                <a href="/disclaimer.html">Disclaimer</a>
+              </div>
+            </div>
+
+            <div>
+              <p class="tiny" style="margin:10px 0 0; text-align:right;">
+                18+ • Spielen Sie verantwortungsvoll.<br>
+                Hilfe bei Spielsucht: www.bzga.de
+              </p>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Set current date
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('currentDate').textContent = 
+      currentDate.toLocaleDateString('de-DE', options);
+    
+    // Set current year
+    document.getElementById('currentYear').textContent = currentDate.getFullYear();
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if(targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if(targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
