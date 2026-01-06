@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=5" />
+
+  <title>Seite nicht gefunden - AllySpin Casino</title>
+  <meta name="description" content="Die gesuchte Seite existiert nicht. Kehren Sie zur Startseite von AllySpin Casino zurück, um Login, Bonus, App und Support zu finden." />
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg-main: #242F3C;
+      --bg-section: #212C38;
+      --bg-overlay: #150913;
+      --header-bg: #360812;
+      --header-accent: #682F14;
+      --accent-yellow: #F2D42B;
+      --accent-yellow-dark: #EBCC2A;
+      --accent-yellow-light: #E4D47A;
+      --text-primary: #EFF0F3;
+      --text-secondary: #B1ADBF;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.04);
+      --stroke: rgba(255,255,255,.12);
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --r: 18px;
+      --r2: 22px;
+    }
+
+    *{box-sizing:border-box; margin:0; padding:0}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-main);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+      min-height:100vh;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block;height:auto}
+
+    .container{
+      max-width:700px;
+      width:100%;
+      border-radius:var(--r2);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid var(--stroke);
+      background: rgba(33,44,56,.92);
+      backdrop-filter:blur(10px);
+    }
+
+    .header{
+      padding:24px 28px 20px;
+      border-bottom:1px solid var(--stroke);
+      background: linear-gradient(90deg, rgba(242,212,43,.20), rgba(235,204,42,.12));
+      text-align:center;
+    }
+
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:14px;
+      padding:12px 18px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      margin-bottom:12px;
+    }
+
+    .brand-logo{
+      width:56px;
+      height:56px;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--accent-yellow), var(--accent-yellow-dark));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:1000;
+      font-size:24px;
+      color:var(--text-primary);
+      border:1px solid rgba(255,255,255,.18);
+    }
+
+    .brand-name{
+      font-weight:1100;
+      font-size:28px;
+      letter-spacing:.2px;
+    }
+
+    .subtitle{
+      color:rgba(239,240,243,.75);
+      font-size:15px;
+      margin-top:6px;
+    }
+
+    .error-content{
+      padding:36px 30px 32px;
+      text-align:center;
+      background:
+        radial-gradient(600px 320px at 30% 20%, rgba(242,212,43,.18), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.16));
+    }
+
+    .error-code{
+      font-size:140px;
+      font-weight:1200;
+      line-height:1;
+      background:linear-gradient(135deg, var(--accent-yellow), var(--accent-yellow-dark), var(--header-accent));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      margin-bottom:10px;
+      letter-spacing:-6px;
+      text-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+
+    h1{
+      font-size:32px;
+      font-weight:1100;
+      margin-bottom:16px;
+      letter-spacing:.2px;
+      color:var(--text-primary);
+    }
+
+    .error-desc{
+      color:rgba(239,240,243,.82);
+      font-size:17px;
+      line-height:1.7;
+      max-width:46ch;
+      margin:0 auto 28px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px 32px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:linear-gradient(180deg, var(--accent-yellow), var(--accent-yellow-dark));
+      color:#1a1a1a;
+      font-weight:1000;
+      font-size:16px;
+      cursor:pointer;
+      transition:transform 0.2s, box-shadow 0.2s;
+      box-shadow:0 12px 32px rgba(0,0,0,.35);
+      min-width:180px;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.45);
+    }
+
+    .btn-secondary{
+      background:rgba(104,47,20,.18);
+      border-color:rgba(104,47,20,.28);
+      color:var(--text-primary);
+      margin-left:14px;
+    }
+
+    .quick-links{
+      margin-top:32px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      justify-content:center;
+    }
+
+    .link-chip{
+      padding:10px 18px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      color:rgba(239,240,243,.88);
+      font-weight:950;
+      font-size:14px;
+      transition:all 0.2s;
+    }
+
+    .link-chip:hover{
+      background:rgba(255,255,255,.08);
+      border-color:rgba(255,255,255,.18);
+      transform:translateY(-1px);
+      box-shadow:0 8px 20px rgba(0,0,0,.25);
+    }
+
+    .info-panel{
+      margin-top:28px;
+      padding:18px 20px;
+      border-radius:18px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      font-size:14px;
+      color:rgba(239,240,243,.70);
+      line-height:1.6;
+      text-align:left;
+    }
+
+    .info-panel strong{
+      color:rgba(239,240,243,.95);
+      font-weight:1100;
+    }
+
+    .footer{
+      padding:20px 28px;
+      border-top:1px solid var(--stroke);
+      background:rgba(0,0,0,.22);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .legal{
+      font-size:13px;
+      color:rgba(239,240,243,.60);
+    }
+
+    .legal a{
+      color:rgba(239,240,243,.80);
+      margin:0 8px;
+    }
+
+    .legal a:hover{
+      text-decoration:underline;
+      color:var(--accent-yellow);
+    }
+
+    .counter{
+      font-size:14px;
+      color:rgba(239,240,243,.65);
+      font-weight:950;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .countdown{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:32px;
+      height:32px;
+      border-radius:999px;
+      background:rgba(104,47,20,.20);
+      border:1px solid rgba(104,47,20,.30);
+      font-weight:1000;
+      font-size:15px;
+    }
+
+    @media (max-width: 768px){
+      .error-code{
+        font-size:100px;
+        letter-spacing:-4px;
+      }
+      h1{
+        font-size:26px;
+      }
+      .error-desc{
+        font-size:16px;
+      }
+      .footer{
+        flex-direction:column;
+        text-align:center;
+        gap:12px;
+      }
+      .legal{
+        order:2;
+      }
+      .counter{
+        order:1;
+      }
+      .btn-secondary{
+        margin-left:0;
+        margin-top:14px;
+      }
+      .btn{
+        min-width:160px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .container{
+        border-radius:18px;
+      }
+      .header, .error-content, .footer{
+        padding:20px 18px;
+      }
+      .error-code{
+        font-size:80px;
+        letter-spacing:-3px;
+      }
+      h1{
+        font-size:22px;
+      }
+      .quick-links{
+        gap:10px;
+      }
+      .link-chip{
+        padding:8px 14px;
+        font-size:13px;
+      }
+      .btn{
+        padding:14px 24px;
+        font-size:15px;
+        width:100%;
+      }
+      .brand{
+        padding:10px 14px;
+        gap:10px;
+      }
+      .brand-logo{
+        width:48px;
+        height:48px;
+        font-size:20px;
+      }
+      .brand-name{
+        font-size:24px;
+      }
+    }
+  </style>
+
+  <!-- Schema Markup für 404-Seite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Seite nicht gefunden - AllySpin Casino",
+    "description": "Die gesuchte Seite existiert nicht. Kehren Sie zur Startseite von AllySpin Casino zurück.",
+    "url": "https://casino-allyspin.com/404.html",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://casino-allyspin.com/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="container" role="main">
+    <div class="header">
+      <div class="brand">
+        <div class="brand-logo">404</div>
+        <div class="brand-name">AllySpin Casino</div>
+      </div>
+      <div class="subtitle">Seite nicht gefunden • 18+ • Verantwortungsvoll spielen</div>
+    </div>
+
+    <div class="error-content">
+      <div class="error-code" aria-label="Fehlercode 404">404</div>
+      
+      <h1>Login-Seite nicht gefunden</h1>
+      
+      <p class="error-desc">
+        Die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben, umbenannt oder existiert nicht mehr.
+      </p>
+      
+      <div style="margin-bottom:22px;">
+        <a href="/" class="btn" aria-label="Zurück zur Startseite">
+          Zurück zu AllySpin Casino
+        </a>
+        <a href="/#login" class="btn btn-secondary" aria-label="Zum Login">
+          Login & Hilfe ansehen
+        </a>
+      </div>
+
+      <div class="quick-links">
+        <a href="/#login" class="link-chip">AllySpin Login</a>
+        <a href="/#bonus" class="link-chip">Willkommensbonus</a>
+        <a href="/#register" class="link-chip">Registrierung</a>
+        <a href="/#payments" class="link-chip">Zahlungsoptionen</a>
+        <a href="/#faq" class="link-chip">FAQ & Support</a>
+      </div>
+
+      <div class="info-panel">
+        <strong>Tipp:</strong> Nutzen Sie die Navigation oben, um direkt zu den wichtigsten Bereichen von AllySpin Casino zu gelangen – oder kehren Sie einfach zur Startseite zurück, um Hilfe zu Login, Bonus, App und Support zu finden.
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="legal">
+        © <span id="currentYear"></span> casino-allyspin.com | 
+        <a href="/privacy-policy.html">Datenschutz</a> • 
+        <a href="/terms.html">Nutzungsbedingungen</a> • 
+        <a href="/disclaimer.html">Disclaimer</a> •
+        <a href="/responsible-gaming.html">Responsible Gaming</a>
+      </div>
+      <div class="counter" id="redirectCounter">
+        Automatische Weiterleitung in 
+        <span class="countdown" id="countdown">10</span>
+        Sekunden
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Aktuelles Jahr setzen
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Automatischer Redirect-Countdown
+    let seconds = 10;
+    const countdownElement = document.getElementById('countdown');
+    const countdownInterval = setInterval(() => {
+      seconds--;
+      countdownElement.textContent = seconds;
+      
+      if (seconds <= 0) {
+        clearInterval(countdownInterval);
+        window.location.href = "/";
+      }
+    }, 1000);
+    
+    // Verfolgung der 404-Fehlerseite (falls Analytics vorhanden)
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'page_view', {
+        'page_title': '404 - Seite nicht gefunden - AllySpin Casino',
+        'page_location': window.location.href,
+        'page_path': window.location.pathname
+      });
+    }
+    
+    // Klick auf jeden Link stoppt den Countdown
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        clearInterval(countdownInterval);
+        document.getElementById('redirectCounter').innerHTML = '<span style="color:var(--accent-yellow);">✓ Weiterleitung gestoppt</span>';
+      });
+    });
+    
+    // Responsive Anpassungen
+    function adjustLayout() {
+      const width = window.innerWidth;
+      const buttons = document.querySelectorAll('.btn');
+      
+      if (width < 768) {
+        // Anpassung für mobile Geräte
+        buttons.forEach(btn => {
+          btn.style.width = '100%';
+          btn.style.margin = '6px 0';
+          btn.style.justifyContent = 'center';
+        });
+      }
+    }
+    
+    // Initial anpassen und auf Resize hören
+    adjustLayout();
+    window.addEventListener('resize', adjustLayout);
+  </script>
+</body>
+</html>
