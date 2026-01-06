@@ -274,7 +274,7 @@
       box-sizing: border-box;
     }
 
-    /* HERO SECTION */
+    /* HERO SECTION - ИСПРАВЛЕНО */
     .hero{
       margin-top:14px;
       border-radius: 24px;
@@ -304,6 +304,7 @@
       grid-template-columns: 1.2fr .8fr;
       min-height: 320px;
       width:100%;
+      align-items: center; /* ИСПРАВЛЕНО: выравниваем по центру */
     }
     .hero-left{
       padding:26px 24px 22px;
@@ -347,7 +348,7 @@
     }
     .hero-right{
       display:flex;
-      align-items:flex-end;
+      align-items:center; /* ИСПРАВЛЕНО: было flex-end */
       justify-content:center;
       padding: 0 14px;
       width:100%;
@@ -484,7 +485,7 @@
       background: linear-gradient(180deg, var(--accent-yellow-light), rgba(0,0,0,.14));
     }
 
-    /* BIG BONUS BANNER - УВЕЛИЧЕННАЯ ВЕРСИЯ */
+    /* BIG BONUS BANNER - ИСПРАВЛЕНО */
     .bonus{
       margin-top:14px;
       border-radius: 22px;
@@ -492,7 +493,7 @@
       border:1px solid rgba(255,255,255,.12);
       background: linear-gradient(135deg, rgba(235,204,42,.25), rgba(54,8,18,.15));
       position:relative;
-      min-height: 200px; /* УВЕЛИЧИЛИ ВЫСОТУ */
+      min-height: 200px;
       display:flex;
       align-items:stretch;
       box-shadow: var(--shadow);
@@ -535,23 +536,25 @@
     .bonus .cta{margin-top:14px}
     .bonus .right{
       position:relative;
-      width: 320px; /* УВЕЛИЧИЛИ ШИРИНУ */
+      width: 320px;
       display:flex;
-      align-items:center; /* ВЫРАВНИВАЕМ ПО ЦЕНТРУ */
-      justify-content:flex-start; /* ЦЕНТРИРУЕМ */
+      align-items:center;
+      justify-content:center; /* ИСПРАВЛЕНО: было flex-start */
       padding:15px;
       box-sizing: border-box;
+      overflow: hidden; /* Добавляем для безопасности */
     }
     .bonus .right img{
-      width: 130%; /* ЗНАЧИТЕЛЬНО УВЕЛИЧИЛИ */
-      height: 220px; /* УВЕЛИЧИЛИ ВЫСОТУ */
+      width: 100%; /* ИСПРАВЛЕНО: было 130% */
+      height: auto; /* ИСПРАВЛЕНО: было 220px */
+      max-height: 220px;
       object-fit: contain;
       filter: drop-shadow(0 22px 45px rgba(0,0,0,.65));
       transition: transform 0.3s ease;
-      max-width: none; /* ОТКЛЮЧАЕМ ОГРАНИЧЕНИЕ */
+      max-width: 100%; /* Ограничиваем ширину */
     }
     .bonus .right img:hover{
-      transform: scale(1.05); /* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
+      transform: scale(1.05);
     }
 
     /* TABLES */
@@ -752,8 +755,9 @@
         width: 300px;
       }
       .bonus .right img{
-        width: 125%;
-        height: 210px;
+        width: 100%;
+        height: auto;
+        max-height: 210px;
       }
     }
 
@@ -828,7 +832,7 @@
         width: 100% !important;
       }
       
-      /* BONUS НА МОБИЛЬНЫХ - УВЕЛИЧИВАЕМ ИЗОБРАЖЕНИЕ */
+      /* BONUS НА МОБИЛЬНЫХ */
       .bonus{
         flex-direction: column !important;
         min-height: auto !important;
@@ -848,8 +852,8 @@
       
       .bonus .right img{
         width: 100% !important;
-        max-width: 350px !important; /* БОЛЬШОЕ ИЗОБРАЖЕНИЕ НА МОБИЛЬНЫХ */
-        height: 200px !important; /* УВЕЛИЧИВАЕМ ВЫСОТУ */
+        max-width: 350px !important;
+        height: auto !important;
         max-height: 220px !important;
       }
       
@@ -931,7 +935,7 @@
       /* BONUS НА ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНАХ */
       .bonus .right img{
         max-width: 320px !important;
-        height: 180px !important;
+        max-height: 180px !important;
       }
       
       .bonus .big{
@@ -953,7 +957,7 @@
     @media (max-width: 360px){
       .bonus .right img{
         max-width: 280px !important;
-        height: 160px !important;
+        max-height: 160px !important;
       }
       
       .hero-right img{
@@ -1150,7 +1154,7 @@
           </div>
           <div class="body">
             <p>
-              Die <strong>AllySpin Casino-Anmeldung</strong> ist in der Regel in wenigen Minuten erledigt. Typisch sind Basisdaten,
+              Die <strong>AllySpin Casino-Anmeldung</strong> ist в der Regel in wenigen Minuten erledigt. Typisch sind Basisdaten,
               eine gültige E-Mail und ein sicheres Passwort. Anschließend kann eine Verifizierung (KYC) erforderlich sein,
               besonders vor Auszahlungen.
             </p>
@@ -1351,7 +1355,7 @@
               die gleichen Punkte prüfen: Bonusbedingungen, Zahlungen, Support und Bedienbarkeit.
             </p>
 
-            <div class="ratings" aria-label="Rating Kacheln">
+            <div class="ratings" aria-label="Rating Kachelн">
               <div class="rate">
                 <div class="t">Live-Casino</div>
                 <div class="stars">★★★★★</div>
@@ -1506,5 +1510,3 @@
   </script>
 </body>
 </html>
-
-
