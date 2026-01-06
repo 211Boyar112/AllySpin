@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=5" />
 
   <title>AllySpin Casino Login</title>
   <meta name="description" content="AllySpin Casino Login: Anmeldung, Bonus, App, Zahlungen und Support – kompakt erklärt. 18+ • Informationsseite." />
@@ -55,26 +55,41 @@
       --sb: 260px;
     }
 
+    /* БАЗОВЫЕ СТИЛИ */
     *{box-sizing:border-box}
-    html,body{height:100%}
+    html,body{
+      height:100%;
+      width:100%;
+      overflow-x: hidden; /* ЗАПРЕЩАЕМ ГОРИЗОНТАЛЬНЫЙ СКРОЛЛ */
+      position: relative;
+    }
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color: var(--text-primary);
       background: var(--bg-main);
+      max-width: 100vw; /* ОГРАНИЧИВАЕМ ШИРИНУ */
     }
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
+    img{
+      max-width:100%;
+      display:block;
+      height: auto; /* ДЛЯ АДАПТИВНОСТИ ИЗОБРАЖЕНИЙ */
+    }
 
-    /* Layout: только левое меню + основной контент */
+    /* LAYOUT */
     .app{
       display:grid;
       grid-template-columns: var(--sb) 1fr;
       min-height:100%;
       gap:18px;
       padding:18px;
+      width:100%;
+      max-width: 100vw;
+      box-sizing: border-box;
     }
 
+    /* SIDEBAR */
     .sb{
       position:sticky; top:18px;
       height: calc(100vh - 36px);
@@ -85,6 +100,8 @@
       box-shadow: var(--shadow);
       padding:14px;
       background-color: var(--bg-section);
+      width:100%;
+      box-sizing: border-box;
     }
 
     .brand{
@@ -93,6 +110,8 @@
       border-radius: 16px;
       background: rgba(0,0,0,.18);
       border:1px solid rgba(255,255,255,.10);
+      width:100%;
+      box-sizing: border-box;
     }
     .brand img{
       width:46px;height:46px;border-radius:14px;
@@ -113,6 +132,7 @@
       margin-top:12px;
       display:grid;
       gap:8px;
+      width:100%;
     }
     .item{
       display:flex; align-items:center; justify-content:space-between;
@@ -122,6 +142,8 @@
       background: rgba(0,0,0,.16);
       color: var(--text-primary);
       font-weight:950;
+      width:100%;
+      box-sizing: border-box;
     }
     .item:hover{
       border-color:rgba(255,255,255,.14); 
@@ -142,9 +164,11 @@
       letter-spacing:.28px;
       text-transform:uppercase;
       color: var(--text-secondary);
+      width:100%;
     }
     .navlist{
       display:grid; gap:8px;
+      width:100%;
     }
     .navlist a{
       display:block;
@@ -155,6 +179,8 @@
       color: var(--text-primary);
       font-weight:900;
       font-size:13px;
+      width:100%;
+      box-sizing: border-box;
     }
     .navlist a:hover{
       background: rgba(0,0,0,.18); 
@@ -167,15 +193,22 @@
       border-radius:16px;
       border:1px solid rgba(255,255,255,.12);
       background: linear-gradient(180deg, rgba(242,212,43,.10), rgba(0,0,0,.10));
+      width:100%;
+      box-sizing: border-box;
     }
     .rg b{display:block; font-weight:1000; color: var(--text-primary)}
     .rg p{margin:8px 0 0; color:var(--text-secondary); font-size:12.5px; line-height:1.55}
 
-    /* Main topbar */
+    /* MAIN CONTENT */
     .main{
       min-width:0;
       border-radius: var(--r2);
+      width:100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow: hidden; /* ПРЕДОТВРАЩАЕМ ВЫХОД ЭЛЕМЕНТОВ */
     }
+
     .topbar{
       display:flex;
       align-items:center;
@@ -188,8 +221,10 @@
       backdrop-filter: blur(10px);
       box-shadow: var(--shadow);
       position:sticky; top:18px; z-index:30;
+      width:100%;
+      box-sizing: border-box;
     }
-    .toplinks{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    .toplinks{display:flex; gap:12px; flex-wrap:wrap; align-items:center; width:100%;}
     .toplinks a{
       padding:8px 10px;
       border-radius:999px;
@@ -202,7 +237,7 @@
       background: rgba(0,0,0,.1);
     }
 
-    .top-actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .top-actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
     .lang{
       display:inline-flex; align-items:center; gap:8px;
       padding:8px 12px;
@@ -230,14 +265,16 @@
     }
     .btn.ghost{background: rgba(0,0,0,.10)}
 
-    /* Content container */
+    /* CONTENT CONTAINER */
     .content{
       max-width: var(--max);
       margin: 14px auto 0;
-      padding: 0 2px 30px;
+      padding: 0 15px 30px; /* УВЕЛИЧИЛИ ОТСТУПЫ */
+      width:100%;
+      box-sizing: border-box;
     }
 
-    /* Hero like screenshot */
+    /* HERO SECTION */
     .hero{
       margin-top:14px;
       border-radius: 24px;
@@ -250,6 +287,8 @@
         linear-gradient(135deg, rgba(242,212,43,.15), rgba(0,0,0,.10) 40%, rgba(228,212,122,.05));
       position:relative;
       background-color: var(--bg-section);
+      width:100%;
+      box-sizing: border-box;
     }
     .hero::before{
       content:"";
@@ -264,9 +303,12 @@
       display:grid;
       grid-template-columns: 1.2fr .8fr;
       min-height: 320px;
+      width:100%;
     }
     .hero-left{
       padding:26px 24px 22px;
+      width:100%;
+      box-sizing: border-box;
     }
     .kicker{
       display:inline-flex; align-items:center; gap:10px;
@@ -288,6 +330,8 @@
       letter-spacing:.2px;
       font-weight:1100;
       color: var(--text-primary);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     .hero p{
       margin:12px 0 0;
@@ -306,20 +350,25 @@
       align-items:flex-end;
       justify-content:center;
       padding: 0 14px;
+      width:100%;
+      box-sizing: border-box;
     }
     .hero-right img{
-      width:min(380px, 95%);
-      height: min(320px, 95%);
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      max-height: 320px;
       object-fit:contain;
       filter: drop-shadow(0 22px 40px rgba(0,0,0,.55));
     }
 
-    /* Info strip (4 pills) */
+    /* INFO STRIP */
     .strip{
       margin-top:12px;
       display:grid;
       grid-template-columns: repeat(4, 1fr);
       gap:10px;
+      width:100%;
     }
     .pill2{
       display:flex; align-items:center; justify-content:space-between; gap:10px;
@@ -328,6 +377,8 @@
       border:1px solid rgba(255,255,255,.12);
       background: rgba(0,0,0,.14);
       background-color: var(--bg-section);
+      width:100%;
+      box-sizing: border-box;
     }
     .pill2 .l{
       display:flex; align-items:center; gap:10px;
@@ -346,7 +397,7 @@
       color: var(--text-primary);
     }
 
-    /* Section wrapper like screenshot */
+    /* SECTIONS */
     .sec{
       margin-top:16px;
       border-radius: 22px;
@@ -354,14 +405,18 @@
       background: var(--bg-section);
       box-shadow: var(--shadow);
       overflow:hidden;
+      width:100%;
+      box-sizing: border-box;
     }
     .sec .head{
       padding:14px 16px 12px;
       border-bottom:1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.1);
+      width:100%;
+      box-sizing: border-box;
     }
 
-    /* Decorative title line with diamonds */
+    /* TITLE BAR */
     .titlebar{
       display:flex;
       align-items:center;
@@ -376,6 +431,8 @@
       letter-spacing:.3px;
       text-transform:uppercase;
       font-size:14px;
+      width:100%;
+      box-sizing: border-box;
     }
     .titlebar .line{
       height:2px;
@@ -392,15 +449,21 @@
       box-shadow: 0 0 18px rgba(242,212,43,.25);
     }
 
-    .sec .body{padding:14px 16px 16px}
+    .sec .body{
+      padding:14px 16px 16px;
+      width:100%;
+      box-sizing: border-box;
+    }
     p,li{color: var(--text-primary); opacity: 0.9; line-height:1.7; font-size:14px}
     ul{margin:10px 0; padding-left:18px}
 
+    /* CARDS */
     .cards{
       margin-top:12px;
       display:grid;
       grid-template-columns: repeat(4, 1fr);
       gap:12px;
+      width:100%;
     }
     .card{
       padding:14px;
@@ -409,6 +472,8 @@
       background: rgba(0,0,0,.16);
       text-align:center;
       background-color: var(--bg-overlay);
+      width:100%;
+      box-sizing: border-box;
     }
     .card b{display:block; font-weight:1100; margin-top:6px; color: var(--text-primary)}
     .card .s{color: var(--text-secondary); font-size:12.5px; margin-top:4px}
@@ -419,7 +484,7 @@
       background: linear-gradient(180deg, var(--accent-yellow-light), rgba(0,0,0,.14));
     }
 
-    /* Big bonus banner */
+    /* BIG BONUS BANNER - УВЕЛИЧЕННАЯ ВЕРСИЯ */
     .bonus{
       margin-top:14px;
       border-radius: 22px;
@@ -427,11 +492,13 @@
       border:1px solid rgba(255,255,255,.12);
       background: linear-gradient(135deg, rgba(235,204,42,.25), rgba(54,8,18,.15));
       position:relative;
-      min-height: 170px;
+      min-height: 200px; /* УВЕЛИЧИЛИ ВЫСОТУ */
       display:flex;
       align-items:stretch;
       box-shadow: var(--shadow);
       background-color: var(--header-bg);
+      width:100%;
+      box-sizing: border-box;
     }
     .bonus::before{
       content:"";
@@ -444,6 +511,8 @@
       position:relative;
       padding:18px 16px;
       flex:1;
+      width:100%;
+      box-sizing: border-box;
     }
     .bonus .k{color: var(--accent-yellow); font-weight:1100; text-transform:uppercase; letter-spacing:.3px}
     .bonus .big{
@@ -466,39 +535,65 @@
     .bonus .cta{margin-top:14px}
     .bonus .right{
       position:relative;
-      width: 280px;
+      width: 320px; /* УВЕЛИЧИЛИ ШИРИНУ */
       display:flex;
-      align-items:flex-end;
-      justify-content:flex-end;
-      padding:10px;
+      align-items:center; /* ВЫРАВНИВАЕМ ПО ЦЕНТРУ */
+      justify-content:center; /* ЦЕНТРИРУЕМ */
+      padding:15px;
+      box-sizing: border-box;
     }
     .bonus .right img{
-      width: 210%;
-      height: 300px;
+      width: 130%; /* ЗНАЧИТЕЛЬНО УВЕЛИЧИЛИ */
+      height: 220px; /* УВЕЛИЧИЛИ ВЫСОТУ */
       object-fit: contain;
-      filter: drop-shadow(0 18px 38px rgba(0,0,0,.55));
+      filter: drop-shadow(0 22px 45px rgba(0,0,0,.65));
+      transition: transform 0.3s ease;
+      max-width: none; /* ОТКЛЮЧАЕМ ОГРАНИЧЕНИЕ */
+    }
+    .bonus .right img:hover{
+      transform: scale(1.05); /* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
     }
 
-    /* Tables like screenshot */
+    /* TABLES */
     .table-wrap{
       margin-top:12px;
-      overflow:auto;
+      overflow-x: auto; /* ГОРИЗОНТАЛЬНЫЙ СКРОЛ ТОЛЬКО ДЛЯ ТАБЛИЦ */
+      -webkit-overflow-scrolling: touch; /* ПЛАВНЫЙ СКРОЛ НА iOS */
       border-radius: 16px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(0,0,0,.14);
       background-color: var(--bg-overlay);
+      width:100%;
+      box-sizing: border-box;
     }
-    table{width:100%; border-collapse:collapse; min-width:760px}
-    th,td{padding:12px 12px; border-bottom:1px solid rgba(255,255,255,.10); text-align:left; font-size:14px}
-    th{background: rgba(255,255,255,.05); color: var(--text-primary); font-weight:1100}
-    td{color: var(--text-primary); opacity: 0.9}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:760px; /* МИНИМАЛЬНАЯ ШИРИНА ДЛЯ ТАБЛИЦ */
+    }
+    th,td{
+      padding:12px 12px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      text-align:left;
+      font-size:14px;
+    }
+    th{
+      background: rgba(255,255,255,.05);
+      color: var(--text-primary);
+      font-weight:1100;
+    }
+    td{
+      color: var(--text-primary);
+      opacity: 0.9;
+    }
 
-    /* Ratings grid like screenshot */
+    /* RATINGS */
     .ratings{
       display:grid;
       grid-template-columns: repeat(4, 1fr);
       gap:12px;
       margin-top:12px;
+      width:100%;
     }
     .rate{
       border-radius: 16px;
@@ -507,16 +602,22 @@
       padding:12px;
       text-align:center;
       background-color: var(--bg-overlay);
+      width:100%;
+      box-sizing: border-box;
     }
     .rate .t{font-weight:1100; color: var(--text-primary)}
-    .stars{margin-top:8px; letter-spacing:2px; color: var(--accent-yellow)}
+    .stars{
+      margin-top:8px;
+      letter-spacing:2px;
+      color: var(--accent-yellow);
+    }
     .score{
       margin-top:8px;
       font-weight:1200;
       color: var(--accent-yellow);
     }
 
-    /* FAQ accordion */
+    /* FAQ */
     .faq details{
       margin-top:10px;
       border-radius: 16px;
@@ -524,15 +625,22 @@
       background: rgba(0,0,0,.16);
       overflow:hidden;
       background-color: var(--bg-overlay);
+      width:100%;
+      box-sizing: border-box;
     }
     .faq summary{
       cursor:pointer;
       list-style:none;
       padding:12px 14px;
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
       font-weight:1100;
       background: rgba(0,0,0,.12);
       color: var(--text-primary);
+      width:100%;
+      box-sizing: border-box;
     }
     .faq summary::-webkit-details-marker{display:none}
     .faq .ans{
@@ -544,7 +652,7 @@
       font-size:14px;
     }
 
-    /* Author block */
+    /* AUTHOR */
     .author{
       display:flex;
       gap:14px;
@@ -555,9 +663,12 @@
       background: rgba(0,0,0,.14);
       margin-top:12px;
       background-color: var(--bg-overlay);
+      width:100%;
+      box-sizing: border-box;
     }
     .author img{
-      width:64px; height:64px;
+      width:64px;
+      height:64px;
       border-radius: 18px;
       object-fit:cover;
       border:1px solid rgba(255,255,255,.12);
@@ -565,9 +676,14 @@
     }
     .author b{display:block; font-weight:1200; color: var(--text-primary)}
     .author .meta{color: var(--text-secondary); font-size:12.5px; margin-top:4px}
-    .author p{margin:8px 0 0; color: var(--text-primary); opacity: 0.9; font-size:13.5px}
+    .author p{
+      margin:8px 0 0;
+      color: var(--text-primary);
+      opacity: 0.9;
+      font-size:13.5px;
+    }
 
-    /* Footer like screenshot */
+    /* FOOTER */
     .footer{
       margin-top:16px;
       border-radius: 22px;
@@ -576,45 +692,277 @@
       box-shadow: var(--shadow);
       overflow:hidden;
       background-color: var(--bg-section);
+      width:100%;
+      box-sizing: border-box;
     }
     .footer .inner{
       padding:14px 16px;
       display:grid;
       grid-template-columns: 1.2fr .8fr;
       gap:14px;
+      width:100%;
+      box-sizing: border-box;
     }
     .footlinks{
-      display:flex; gap:12px; flex-wrap:wrap;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
       color: var(--text-primary);
       opacity: 0.9;
       font-weight:900;
       font-size:13px;
     }
-    .footlinks a:hover{text-decoration:underline; color: var(--accent-yellow)}
+    .footlinks a:hover{
+      text-decoration:underline;
+      color: var(--accent-yellow);
+    }
     .payrow{
-      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; align-items:center;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
       opacity:.85;
     }
-    .payrow img{height:22px; filter: grayscale(100%); opacity:.9}
-    .tiny{color: var(--text-secondary); font-size:12.5px; line-height:1.6}
-
-    /* Responsive */
-    @media (max-width: 1180px){
-      .app{grid-template-columns: var(--sb) 1fr; }
-      .content{max-width: 980px}
+    .payrow img{
+      height:22px;
+      filter: grayscale(100%);
+      opacity:.9;
     }
+    .tiny{
+      color: var(--text-secondary);
+      font-size:12.5px;
+      line-height:1.6;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    
+    /* TABLET (до 1180px) */
+    @media (max-width: 1180px){
+      .app{
+        grid-template-columns: var(--sb) 1fr;
+        padding: 15px;
+        gap: 15px;
+      }
+      .content{
+        max-width: 100%;
+        padding: 0 15px 30px;
+      }
+      .bonus .right{
+        width: 300px;
+      }
+      .bonus .right img{
+        width: 125%;
+        height: 210px;
+      }
+    }
+
+    /* MOBILE (до 940px) */
     @media (max-width: 940px){
-      .app{grid-template-columns: 1fr; padding:12px}
-      .sb{display:none}
-      .topbar{top:12px}
-      .hero-grid{grid-template-columns: 1fr}
-      .hero-right{padding: 0 10px}
-      .strip{grid-template-columns: repeat(2, 1fr)}
-      .cards{grid-template-columns: repeat(2, 1fr)}
-      .ratings{grid-template-columns: repeat(2, 1fr)}
-      .footer .inner{grid-template-columns: 1fr}
-      .payrow{justify-content:flex-start}
-      h1{font-size:30px}
+      /* ОСНОВНЫЕ ИСПРАВЛЕНИЯ ДЛЯ МОБИЛЬНЫХ */
+      html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+        width: 100vw !important;
+      }
+      
+      .app{
+        grid-template-columns: 1fr !important;
+        padding: 12px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+      }
+      
+      .sb{
+        display:none;
+      }
+      
+      .topbar{
+        top:12px;
+        padding: 12px 15px;
+        width: 100%;
+      }
+      
+      .content{
+        padding: 0 15px 30px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      
+      /* HERO НА МОБИЛЬНЫХ */
+      .hero-grid{
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+      }
+      
+      .hero-left, .hero-right{
+        padding: 20px 15px !important;
+        width: 100% !important;
+      }
+      
+      .hero-right img{
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 250px !important;
+      }
+      
+      /* STRIP НА МОБИЛЬНЫХ */
+      .strip{
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 100% !important;
+      }
+      
+      .pill2{
+        width: 100% !important;
+      }
+      
+      /* CARDS НА МОБИЛЬНЫХ */
+      .cards{
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 100% !important;
+        gap: 10px !important;
+      }
+      
+      .card{
+        width: 100% !important;
+      }
+      
+      /* BONUS НА МОБИЛЬНЫХ - УВЕЛИЧИВАЕМ ИЗОБРАЖЕНИЕ */
+      .bonus{
+        flex-direction: column !important;
+        min-height: auto !important;
+        width: 100% !important;
+      }
+      
+      .bonus .left{
+        width: 100% !important;
+        padding: 20px 15px !important;
+      }
+      
+      .bonus .right{
+        width: 100% !important;
+        padding: 20px 15px !important;
+        justify-content: center !important;
+      }
+      
+      .bonus .right img{
+        width: 100% !important;
+        max-width: 350px !important; /* БОЛЬШОЕ ИЗОБРАЖЕНИЕ НА МОБИЛЬНЫХ */
+        height: 200px !important; /* УВЕЛИЧИВАЕМ ВЫСОТУ */
+        max-height: 220px !important;
+      }
+      
+      /* RATINGS НА МОБИЛЬНЫХ */
+      .ratings{
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 100% !important;
+      }
+      
+      /* FOOTER НА МОБИЛЬНЫХ */
+      .footer .inner{
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 20px 15px !important;
+      }
+      
+      .payrow{
+        justify-content: flex-start !important;
+      }
+      
+      /* H1 НА МОБИЛЬНЫХ */
+      h1{
+        font-size: 30px !important;
+      }
+      
+      /* TABLES НА МОБИЛЬНЫХ */
+      .table-wrap{
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px) !important;
+        border-radius: 0 !important;
+        border-left: none !important;
+        border-right: none !important;
+      }
+    }
+
+    /* МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) */
+    @media (max-width: 480px){
+      .app{
+        padding: 10px !important;
+      }
+      
+      .content{
+        padding: 0 10px 30px !important;
+      }
+      
+      .topbar{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 10px !important;
+      }
+      
+      .toplinks, .top-actions{
+        width: 100% !important;
+        justify-content: center !important;
+      }
+      
+      .hero-left, .hero-right{
+        padding: 15px 10px !important;
+      }
+      
+      h1{
+        font-size: 26px !important;
+      }
+      
+      .strip{
+        grid-template-columns: 1fr !important;
+      }
+      
+      .cards{
+        grid-template-columns: 1fr !important;
+      }
+      
+      .ratings{
+        grid-template-columns: 1fr !important;
+      }
+      
+      /* BONUS НА ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНАХ */
+      .bonus .right img{
+        max-width: 320px !important;
+        height: 180px !important;
+      }
+      
+      .bonus .big{
+        font-size: 28px !important;
+      }
+      
+      /* СЕКЦИИ НА МАЛЕНЬКИХ ЭКРАНАХ */
+      .sec .head,
+      .sec .body{
+        padding: 12px 10px !important;
+      }
+      
+      .footer .inner{
+        padding: 15px 10px !important;
+      }
+    }
+
+    /* ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (до 360px) */
+    @media (max-width: 360px){
+      .bonus .right img{
+        max-width: 280px !important;
+        height: 160px !important;
+      }
+      
+      .hero-right img{
+        max-height: 200px !important;
+      }
+      
+      .bonus .big{
+        font-size: 24px !important;
+      }
     }
   </style>
 
@@ -741,7 +1089,7 @@
           <div class="body">
             <p>
               Wer nach <strong>Casino AllySpin</strong> sucht, hat meist ein klares Ziel: schnell einloggen, die Oberfläche verstehen
-              und Bonus- oder Zahlungsinfos ohne Umwege finden. Genau dafür ist diese Startseite gedacht:
+              und Bonus- или Zahlungsinfos ohne Umwege finden. Genau dafür ist diese Startseite gedacht:
               als strukturierte Übersicht mit den wichtigsten Punkten – Login, Registrierung, Spiele, Live-Casino,
               Einzahlungen/Auszahlungen und Support.
             </p>
@@ -786,7 +1134,7 @@
             </div>
           </div>
           <div class="right" aria-label="Bonus Bild">
-            <img src="/images/bonus-chest.png" alt="Bonus Visual" loading="lazy" onerror="this.style.display='none'">
+            <img src="/images/bonus-chest.png?v=2" alt="Bonus Visual" loading="lazy" onerror="this.style.display='none'">
           </div>
         </section>
         <p style="margin:10px 2px 0; color: var(--text-secondary); font-size:12.5px;">*Nur wenn im Casino aktuell verfügbar. Bedingungen im Konto prüfen.</p>
@@ -957,7 +1305,7 @@
           </div>
           <div class="body">
             <p>
-              Wenn der <strong>AllySpin Casino Login</strong> nicht funktioniert, helfen meist diese Punkte:
+              Wenn der <strong>AllySpin Casino Login</strong> nicht funktioniert, helfen meist diese Punkте:
               Passwort-Reset, Browser-Cache, Gerätewechsel oder ein kurzer Check, ob Wartung läuft. Bei Konto-Themen
               (z. B. Dokumente/KYC) ist der Support der schnellste Weg.
             </p>
@@ -1136,9 +1484,25 @@
     const d = new Date();
     const fmt = d.toLocaleDateString('de-DE', {year:'numeric', month:'2-digit', day:'2-digit'});
     document.getElementById('upd').textContent = fmt;
+    
+    // Дополнительная защита от горизонтального скролла
+    window.addEventListener('load', function() {
+      if (window.innerWidth <= 940) {
+        document.body.style.overflowX = 'hidden';
+        document.body.style.maxWidth = '100vw';
+        document.body.style.width = '100vw';
+      }
+    });
+    
+    window.addEventListener('resize', function() {
+      if (window.innerWidth <= 940) {
+        document.body.style.overflowX = 'hidden';
+        document.body.style.maxWidth = '100vw';
+        document.body.style.width = '100vw';
+      } else {
+        document.body.style.overflowX = 'auto';
+      }
+    });
   </script>
 </body>
-
 </html>
-
-
